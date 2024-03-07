@@ -5,7 +5,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="${build_artifact:GTZ_all_freq}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="GTZ_all_freq"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:GTZ_all_freq}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="C:/ti\workspace_marking\GTZ_all_freq\Debug\GTZ_all_freq.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.TCI6608 Device Functional Simulator, Little Endian_0/TMS320C66x_0" value="C:/Users\sitogor\OneDrive - University of Bristol\Documents\Advanced DSP\Advanced-DSP\GTZ_all_freq\Debug\GTZ_all_freq.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/GTZ_all_freq"/>
 </listAttribute>

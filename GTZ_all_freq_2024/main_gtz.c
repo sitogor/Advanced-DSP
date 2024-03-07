@@ -61,6 +61,7 @@ int main() {
 	fread(data, 2, NO_OF_SAMPLES, fp);
 	buffer = (short*)malloc(2*8*10000);
 
+
 	/* Create a Clock Instance */
 	Clock_Params clkParams;
 

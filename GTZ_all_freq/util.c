@@ -196,7 +196,7 @@ void task1_dtmfDetect(void)
 		// iterates through the gtz values to find the indecies of the highest values
 		for (x=1; x<=3; x++)
 		{
-			//fixed point freq from 697 to 770
+			//fixed point freq from 697 to 941
 			if(gtz_out[0][x]>max_fixed0)
 			{
 				max_fixed0 = gtz_out[0][x];
@@ -210,7 +210,7 @@ void task1_dtmfDetect(void)
 				max_fixed_index[1] = x;
 			}
 
-			//float freq from 697 to 770
+			//float freq from 697 to 941
 			if(gtz_out_float[0][x]>max_float0)
 			{
 				max_float0 = gtz_out_float[0][x];

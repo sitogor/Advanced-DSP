@@ -41,6 +41,7 @@ void task1_dtmfDetect() {
 		printf("%c\n", result[n]);
 		flag = 0;
 	}
+
 	printf("\nDetection finished\n");
 
 

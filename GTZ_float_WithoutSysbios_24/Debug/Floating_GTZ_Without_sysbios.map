@@ -1,7 +1,7 @@
 ******************************************************************************
                TMS320C6x Linker PC v8.3.12                     
 ******************************************************************************
->> Linked Wed Feb  7 11:55:54 2024
+>> Linked Thu Mar  7 13:18:33 2024
 
 OUTPUT FILE NAME:   <Floating_GTZ_Without_sysbios.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 0c00aa00
@@ -214,7 +214,7 @@ MODULE SUMMARY
     +--+----------------------------+-------+---------+---------+
        Total:                       224     68        853    
                                                              
-    C:\ti\ccsv5\tools\compiler\ti-cgt-c6000_8.3.12\lib\rts6600_elf.lib
+    C:\Users\sitogor\Downloads\ti-cgt-c6000_8.3.12\lib\rts6600_elf.lib
        _printfi.c.obj               13504   92        0      
        _scanfi.c.obj                9184    121       0      
        strtod.c.obj                 2336    200       0      
