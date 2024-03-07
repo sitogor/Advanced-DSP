@@ -1,7 +1,7 @@
 ******************************************************************************
                TMS320C6x Linker PC v7.4.4                      
 ******************************************************************************
->> Linked Thu Mar 07 15:20:17 2024
+>> Linked Thu Mar 07 16:16:02 2024
 
 OUTPUT FILE NAME:   <GTZ_all_freq_2024.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 008122a0
@@ -11,7 +11,7 @@ MEMORY CONFIGURATION
 
          name            origin    length      used     unused   attr    fill
 ----------------------  --------  ---------  --------  --------  ----  --------
-  L2SRAM                00800000   00080000  00020c00  0005f400  RW X
+  L2SRAM                00800000   00080000  00020c10  0005f3f0  RW X
   MSMCSRAM              0c000000   00400000  00000000  00400000  RW X
   DDR2                  80000000   10000000  00000000  10000000  RWIX
 
@@ -32,11 +32,11 @@ run origin  load origin   length   init length attrs members
   0081e2d8    0081e2d8    00001000   00000000    rw- .stack
 0081f2d8    0081f2d8    00000d64   00000d64    rw-
   0081f2d8    0081f2d8    00000d64   00000d64    rw- .fardata.2
-00820040    00820040    00000150   00000000    rw-
+00820040    00820040    00000160   00000000    rw-
   00820040    00820040    00000120   00000000    rw- .cio
-  00820160    00820160    00000030   00000000    rw- .bss
-00820190    00820190    0000006c   0000006c    rw-
-  00820190    00820190    0000006c   0000006c    rw- .neardata
+  00820160    00820160    00000040   00000000    rw- .bss
+008201a0    008201a0    0000006c   0000006c    rw-
+  008201a0    008201a0    0000006c   0000006c    rw- .neardata
 00820400    00820400    00000a0c   00000a0c    r-x
   00820400    00820400    00000200   00000200    r-x .vecs
   00820600    00820600    0000080c   0000080c    r-- .cinit
@@ -769,17 +769,17 @@ xdc.meta   0    00800000    00000138     COPY SECTION
 .cio       0    00820040    00000120     UNINITIALIZED
                   00820040    00000120     rts6600_elf.lib : trgmsg.obj (.cio)
 
-.bss       0    00820160    00000030     UNINITIALIZED
+.bss       0    00820160    00000040     UNINITIALIZED
                   00820160    00000024     main_gtz.obj (.bss)
-                  00820184    0000000c     util.obj (.bss)
+                  00820184    0000001c     util.obj (.bss)
 
 .neardata 
-*          0    00820190    0000006c     
-                  00820190    00000060     main_gtz.obj (.neardata)
-                  008201f0    00000008     ti.uia.runtime.ae66 : QueueDescriptor.oe66 (.neardata)
-                  008201f8    00000004     util.obj (.neardata)
+*          0    008201a0    0000006c     
+                  008201a0    00000060     main_gtz.obj (.neardata)
+                  00820200    00000008     ti.uia.runtime.ae66 : QueueDescriptor.oe66 (.neardata)
+                  00820208    00000004     util.obj (.neardata)
 
-.rodata    0    008201fc    00000000     UNINITIALIZED
+.rodata    0    0082020c    00000000     UNINITIALIZED
 
 .vecs      0    00820400    00000200     
                   00820400    00000200     Sys_BIOs_config_pe66.oe66 (.vecs)
@@ -802,8 +802,8 @@ LINKER GENERATED COPY TABLES
 __TI_cinit_table @ 00820de4 records: 5, size/record: 8, table size: 40
 	.fardata.2: load addr=00820600, load size=000007aa bytes, run addr=0081f2d8, run size=00000d64 bytes, compression=rle
 	.fardata.1: load addr=00820dac, load size=0000000e bytes, run addr=0081aad8, run size=00000008 bytes, compression=rle
-	.neardata: load addr=00820dc8, load size=00000009 bytes, run addr=00820190, run size=0000006c bytes, compression=rle
-	.bss: load addr=00820dd4, load size=00000008 bytes, run addr=00820160, run size=00000030 bytes, compression=zero_init
+	.neardata: load addr=00820dc8, load size=00000009 bytes, run addr=008201a0, run size=0000006c bytes, compression=rle
+	.bss: load addr=00820dd4, load size=00000008 bytes, run addr=00820160, run size=00000040 bytes, compression=zero_init
 	.far: load addr=00820ddc, load size=00000008 bytes, run addr=00816680, run size=00004458 bytes, compression=zero_init
 
 
@@ -919,16 +919,20 @@ ffffffff   binit
 0081ffe0   coef
 00819c90   data
 008117a0   exit
-008201f8   flag
+00820208   flag
 008145e0   fopen
 0080a360   fputc
 00805500   fputs
 00806480   fread
 00814fc0   free
+00820184   freq1
+00820188   freq2
 0080ece0   fseek
 0081aab0   gtz_out
 00812660   lseek
 00810640   ltoa
+0082018c   mag1
+00820190   mag2
 00800000   main
 00813340   malloc
 00814640   memccpy
@@ -939,11 +943,11 @@ ffffffff   binit
 008127a0   read
 008133c0   readmsg
 00814040   remove
-0082018c   sample
+0082019c   sample
 0080b200   setvbuf
 0080d940   task1_dtmfDetect
-00820184   tdiff
-00820188   tdiff_final
+00820194   tdiff
+00820198   tdiff_final
 0081dde4   ti_sysbios_BIOS_Module__diagsEnabled__C
 0081df94   ti_sysbios_BIOS_Module__diagsIncluded__C
 0081dff0   ti_sysbios_BIOS_Module__diagsMask__C
@@ -1475,8 +1479,8 @@ ffffffff   binit
 008079c0   ti_uia_runtime_LoggerStopMode_writeMemoryRange__E
 0081f560   ti_uia_runtime_QueueDescriptor_Module__state__V
 0080f280   ti_uia_runtime_QueueDescriptor_addToList__E
-008201f0   ti_uia_runtime_QueueDescriptor_gPtrToFirstDescriptor
-008201f4   ti_uia_runtime_QueueDescriptor_gUpdateCount
+00820200   ti_uia_runtime_QueueDescriptor_gPtrToFirstDescriptor
+00820204   ti_uia_runtime_QueueDescriptor_gUpdateCount
 00815600   ti_uia_runtime_QueueDescriptor_initHeader__E
 00810e20   ti_uia_runtime_QueueDescriptor_removeFromList__E
 00814040   unlink
@@ -2552,12 +2556,16 @@ address    name
 00820040   __CIOBUF_
 00820160   __TI_STATIC_BASE
 00820160   buffer
-00820184   tdiff
-00820188   tdiff_final
-0082018c   sample
-008201f0   ti_uia_runtime_QueueDescriptor_gPtrToFirstDescriptor
-008201f4   ti_uia_runtime_QueueDescriptor_gUpdateCount
-008201f8   flag
+00820184   freq1
+00820188   freq2
+0082018c   mag1
+00820190   mag2
+00820194   tdiff
+00820198   tdiff_final
+0082019c   sample
+00820200   ti_uia_runtime_QueueDescriptor_gPtrToFirstDescriptor
+00820204   ti_uia_runtime_QueueDescriptor_gUpdateCount
+00820208   flag
 00820400   ti_sysbios_family_c64p_Hwi0
 00820400   ti_sysbios_family_c64p_Hwi_int0
 00820420   ti_sysbios_family_c64p_Hwi_int1
@@ -2588,4 +2596,4 @@ ffffffff   binit
 UNDEFED    __TI_INITARRAY_Base
 UNDEFED    __TI_INITARRAY_Limit
 
-[881 symbols]
+[885 symbols]

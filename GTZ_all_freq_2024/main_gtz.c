@@ -36,7 +36,7 @@ void clk_SWI_GTZ_1633Hz(UArg arg0);
 
 extern void task0_dtmfGen(void);
 extern void task1_dtmfDetect(void);
-
+extern int mag1, mag2, freq1, freq2;
 extern int sample, tdiff, tdiff_final, gtz_out[8];
 extern short coef[8];
 extern int flag;
@@ -47,6 +47,9 @@ short *buffer;
 /*
  *  ======== main ========
  */
+
+
+
 int main() {
 	System_printf("\n System Start\n");
 	System_flush();
@@ -96,6 +99,8 @@ void clk_SWI_Read_Data(UArg arg0) {
 	static int tick;
 	tick = Clock_getTicks();
 	sample = data[tick%NO_OF_SAMPLES];
+	//sample = (int) mag1*sin(2.0*PI*freq1*TICK_PERIOD*tick) + mag2*sin(2.0*PI*freq2*TICK_PERIOD*tick); // sampling for fixed point
+	//sample = sample >>12;
 }
 
 /*

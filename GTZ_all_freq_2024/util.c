@@ -15,6 +15,8 @@
 #include <math.h>
 #include "gtz.h"
 
+int freq1, freq2;
+int mag1, mag2;
 int tdiff,tdiff_final;
 
 int sample, gtz_out[8];
@@ -40,7 +42,12 @@ void task1_dtmfDetect() {
 
 	for(n=0;n<8;n++) {
 		while (!flag) Task_sleep(210);
-		// detects the highest frequencies
+		// test with set frequencies:
+
+		//freq1 = 852;
+		//freq2 = 1477;
+		//mag1 = 32768;
+		//mag2 = 32768;
 
 		// set the initial maxima to the first elements
 		max_fixed0 = gtz_out[0];
@@ -68,15 +75,17 @@ void task1_dtmfDetect() {
 		//f1_fixed = freq_mat[0][max_fixed_index[0]]; //detected values for fixed point case
 		//f2_fixed = freq_mat[1][max_fixed_index[1]];
 		result[n] = pad[max_fixed_index[0]][max_fixed_index[1]];
+
 		printf("\n The decoded value is: %c \n", result[n]);
 		printf("\n pad index pairs: (%d,%d) \n",max_fixed_index[0],max_fixed_index[1]);
 
 		/* TODO 3. Complete code to detect the 8 digits based on the GTZ output */
 		/* ========================= */
-
-		// ideal pad value: (0,0), (0,1), (0,2), (1,0), (1,1), (1,2), (2,0), (2,1)
+		// ideal character detected: 1, 2, 3, 4, 5, 6, 7, 8
+		// ideal pad index pairs: (0,0), (0,1), (0,2), (1,0), (1,1), (1,2), (2,0), (2,1)
 		flag = 0;
 	}
+
 
 	printf("\nDetection finished\n");
 
