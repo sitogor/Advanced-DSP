@@ -199,6 +199,7 @@ void task1_dtmfDetect(void)
 			//fixed point freq from 697 to 941
 			if(gtz_out[0][x]>max_fixed0)
 			{
+				System_printf("The goertzel out for 697-941Hz x = %d is: %d", x, gtz_out[x]);
 				max_fixed0 = gtz_out[0][x];
 				max_fixed_index[0] = x;
 			}
@@ -206,6 +207,7 @@ void task1_dtmfDetect(void)
 			//fixed point freq from 1209 to 1633
 			if(gtz_out[1][x]>max_fixed1)
 			{
+				System_printf("The goertzel out for 1209-1633Hz x = %d is: %d", x, gtz_out[x]);
 				max_fixed1 = gtz_out[1][x];
 				max_fixed_index[1] = x;
 			}
