@@ -11,7 +11,7 @@ var makeAssembly = false;
 var Executable = xdc.module('xdc.bld.Executable');
 
 var exeOpts = new Executable.Attrs({
-        cfgScript: 'D:/Data_And_Docs/University/2nd Year/C Coursework/RepoCopy/C_embedded/GTZ_all_freq/Sys_BIOs_config.cfg',
+        cfgScript: 'C:/Users/Holyo/Documents/Advanced DSP/Advanced DSP Coursework/Advanced-DSP/GTZ_all_freq/Sys_BIOs_config.cfg',
         profile: 'release',
         cfgHome: 'configPkg',
 });
@@ -41,7 +41,7 @@ else {
 
 var thisObj = {
     cfg:        '../Sys_BIOs_config.cfg',
-    outputPath: 'D:/Data_And_Docs/University/2nd Year/C Coursework/RepoCopy/C_embedded/GTZ_all_freq/Debug/configPkg',
+    outputPath: 'C:/Users/Holyo/Documents/Advanced DSP/Advanced DSP Coursework/Advanced-DSP/GTZ_all_freq/Debug/configPkg',
     exeName:    'Sys_BIOs_config' + suffix,
     exeIntName: 'Sys_BIOs_config' + suffix.replace('.', '_'),
     targ:       targ,

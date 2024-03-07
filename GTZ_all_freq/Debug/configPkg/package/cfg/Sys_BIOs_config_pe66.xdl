@@ -9,15 +9,15 @@
  */
 
 
--l"D:\Data_And_Docs\University\2nd Year\C Coursework\RepoCopy\C_embedded\GTZ_all_freq\Debug\configPkg\package\cfg\Sys_BIOs_config_pe66.oe66"
--l"D:\ti\uia_1_03_01_08\packages\ti\uia\services\lib\release\ti.uia.services.ae66"
--l"D:\ti\uia_1_03_01_08\packages\ti\uia\sysbios\lib\release\ti.uia.sysbios.ae66"
--l"D:\ti\uia_1_03_01_08\packages\ti\uia\family\c66\lib\release\ti.uia.family.c66.ae66"
--l"D:\ti\uia_1_03_01_08\packages\ti\uia\runtime\lib\release\ti.uia.runtime.ae66"
--l"D:\ti\bios_6_35_04_50\packages\ti\sysbios\lib\sysbios\instrumented\sysbios.ae66"
--l"D:\ti\uia_1_03_01_08\packages\ti\uia\events\lib\release\ti.uia.events.ae66"
--l"D:\ti\xdctools_3_25_03_72\packages\ti\targets\rts6000\lib\ti.targets.rts6000.ae66"
--l"D:\ti\xdctools_3_25_03_72\packages\ti\targets\rts6000\lib\boot.ae66"
+-l"C:\Users\Holyo\Documents\Advanced DSP\Advanced DSP Coursework\Advanced-DSP\GTZ_all_freq\Debug\configPkg\package\cfg\Sys_BIOs_config_pe66.oe66"
+-l"C:\ti\uia_1_03_01_08\packages\ti\uia\services\lib\release\ti.uia.services.ae66"
+-l"C:\ti\uia_1_03_01_08\packages\ti\uia\sysbios\lib\release\ti.uia.sysbios.ae66"
+-l"C:\ti\uia_1_03_01_08\packages\ti\uia\family\c66\lib\release\ti.uia.family.c66.ae66"
+-l"C:\ti\uia_1_03_01_08\packages\ti\uia\runtime\lib\release\ti.uia.runtime.ae66"
+-l"C:\ti\bios_6_35_04_50\packages\ti\sysbios\lib\sysbios\instrumented\sysbios.ae66"
+-l"C:\ti\uia_1_03_01_08\packages\ti\uia\events\lib\release\ti.uia.events.ae66"
+-l"C:\ti\xdctools_3_25_03_72\packages\ti\targets\rts6000\lib\ti.targets.rts6000.ae66"
+-l"C:\ti\xdctools_3_25_03_72\packages\ti\targets\rts6000\lib\boot.ae66"
 
 --retain="*(xdc.meta)"
 

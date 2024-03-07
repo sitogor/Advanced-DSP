@@ -1,0 +1,41 @@
+!SESSION 2024-02-09 11:44:58.185 -----------------------------------------------
+eclipse.buildId=M20120914-1540
+java.version=1.6.0_13
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product com.ti.ccstudio.branding.product
+
+!ENTRY org.eclipse.ui 2 0 2024-02-09 11:45:26.663
+!MESSAGE Warnings while parsing the viewer contributions from the 'org.eclipse.ui.popupMenus' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-02-09 11:45:26.663
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-02-09 11:45:26.663
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-02-09 11:45:26.663
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.CEditorRulerActions/org.eclipse.cdt.debug.ui.actions.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-02-09 11:45:26.663
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.CBreakpointPropertiesRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-02-09 11:45:26.663
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.internal.ui.actions.asm.EnableDisableBreakpointRulerActionDelegate'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-02-09 11:45:26.663
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.debug.ui', id='AUTOGEN:::org.eclipse.cdt.debug.ui.AsmEditorRulerActions/org.eclipse.cdt.debug.ui.actions.asm.RulerCreateBreakpointInteractiveAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-02-09 11:45:26.663
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.disassemblyRulerActions/org.eclipse.debug.ui.actions.RulerAddBreakpointAction'
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-02-09 11:45:26.663
+!MESSAGE invalid keybinding: Cannot bind to an incomplete key sequence: plug-in='org.eclipse.cdt.dsf.ui', id='org.eclipse.cdt.dsf.debug.ui.disassembly.commands.rulerToggleBreakpoint'
+
+!ENTRY com.ti.ccstudio.debug.server 4 214294189 2024-02-09 11:45:32.814
+!MESSAGE Unexpected CCS exit detected [13/02/23 14:12]!!!
+
+!ENTRY org.eclipse.rtsc.xdctools.ui 2 0 2024-02-09 11:45:58.058
+!MESSAGE Error reading plugin com.ti.mcu.msp.framutilities.product_3.10.0.10:Incorrect repository/product installation location. Specified product installation : C:\ti\msp\MSP430Ware_3_80_14_01\fram_utilities; specified repository : C:\ti\msp\MSP430Ware_3_80_14_01\fram_utilities
+
+!ENTRY org.eclipse.rtsc.xdctools.ui 2 0 2024-02-09 11:45:58.058
+!MESSAGE Error reading plugin com.ti.mcu.msp430.driverlib.product_2.91.13.01:Incorrect repository/product installation location. Specified product installation : C:\ti\msp\MSP430Ware_3_80_14_01\driverlib; specified repository : C:\ti\msp\MSP430Ware_3_80_14_01\driverlib
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-02-09 11:45:58.369
+!MESSAGE Indexed 'Timing' (2 sources, 19 headers) in 0.68 sec: 622 declarations; 655 references; 7 unresolved inclusions; 6 syntax errors; 23 unresolved names (1.77%)
+
+!ENTRY org.eclipse.ui 4 0 2024-02-09 11:47:20.712
+!MESSAGE Problems opening perspective 'com.ti.ccstudio.TICPerspective'

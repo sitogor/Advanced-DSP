@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/Sys_BIOs_config_pe66.c"/>
     </sources>
     <configscripts>
-        <srcFile name="D:/Data_And_Docs/University/2nd Year/C Coursework/RepoCopy/C_embedded/GTZ_all_freq/Sys_BIOs_config.cfg"/>
+        <srcFile name="C:/Users/Holyo/Documents/Advanced DSP/Advanced DSP Coursework/Advanced-DSP/GTZ_all_freq/Sys_BIOs_config.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -25,7 +25,7 @@
             platform="ti.platforms.simTCI6616"
             isa="66"
             suffix="e66"
-            rootDir="D:/ti/ccsv5/tools/compiler/c6000_7.4.4"
+            rootDir="C:/ti/ccsv5/tools/compiler/c6000_7.4.4"
             os="undefined"
             rts="ti.targets.rts6000">
             <model endian="little"
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/Sys_BIOs_config_pe66.cfg"
         xCfgPrefix="package/cfg/Sys_BIOs_config_pe66"
-        cfgScript="D:/Data_And_Docs/University/2nd Year/C Coursework/RepoCopy/C_embedded/GTZ_all_freq/Sys_BIOs_config.cfg"
+        cfgScript="C:/Users/Holyo/Documents/Advanced DSP/Advanced DSP Coursework/Advanced-DSP/GTZ_all_freq/Sys_BIOs_config.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/Sys_BIOs_config_pe66.cfg"
         xCfgPrefix="package/cfg/Sys_BIOs_config_pe66"
-        cfgScript="D:/Data_And_Docs/University/2nd Year/C Coursework/RepoCopy/C_embedded/GTZ_all_freq/Sys_BIOs_config.cfg"
+        cfgScript="C:/Users/Holyo/Documents/Advanced DSP/Advanced DSP Coursework/Advanced-DSP/GTZ_all_freq/Sys_BIOs_config.cfg"
         cfgArgs="null"
         />
     </executables>
