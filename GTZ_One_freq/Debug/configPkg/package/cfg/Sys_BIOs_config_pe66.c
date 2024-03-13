@@ -2715,7 +2715,7 @@ __FAR__ const xdc_SizeT ti_sysbios_utils_Load_Module_State_taskList__O = offseto
  *  Define absolute path prefix for this executable's
  *  configuration generated files.
  */
-xdc__META(__ASM__, "@(#)__ASM__ = D:/Data_And_Docs/University/2nd Year/C Coursework/RepoCopy/C_embedded/GTZ_One_freq/Debug/configPkg/package/cfg/Sys_BIOs_config_pe66");
+xdc__META(__ASM__, "@(#)__ASM__ = C:/Users/Tszyau/Desktop/Advanced_DSP_FPGA/Coursework_1/Advanced-DSP/GTZ_One_freq/Debug/configPkg/package/cfg/Sys_BIOs_config_pe66");
 
 /*
  *  ======== __ISA__ ========
@@ -2916,67 +2916,118 @@ Int xdc_runtime_System_printfExtend__I(Char **pbuf, CString *pfmt,
     c = *fmt++;
     *pfmt = *pfmt + 1;
 
-    if (c == 'f') {
-        Double d, tmp;
-        ULong  fract;
-        Int    negative;
-
-        if (parse->aFlag) {
-            xdc_runtime_Assert_isTrue((sizeof(Float) <= sizeof(IArg)), 
-                xdc_runtime_System_A_cannotFitIntoArg);
-
-            d = argToFloat(va_arg(va, IArg));
+    
+    if (c == '$') {
+        c = *fmt++;
+        *pfmt = *pfmt + 1;
+        
+        if (c == 'L') {
+            xdc_runtime_Types_Label *lab = parse->aFlag ? 
+                (xdc_runtime_Types_Label *)iargToPtr(va_arg(va, IArg)) :
+                (xdc_runtime_Types_Label *)va_arg(va, void *);
+            
+            /* 
+             * Call Text_putLab to write out the label, taking the precision 
+             * into account.
+             */
+            res = xdc_runtime_Text_putLab(lab, pbuf, parse->precis);
+            
+            /*
+             * Set the length to 0 to indicate to 'doPrint' that nothing should
+             * be copied from parse.ptr.
+             */
+            parse->len = 0;
+            
+            /* Update the minimum width field. */
+            parse->width -= res;
+            
+            found = TRUE;
         }
-        else {
-            d = va_arg(va, double);
+        
+        if (c == 'F') {
+            xdc_runtime_Types_Site site;
+            
+            /* Retrieve the file name string from the argument list */
+            site.file = parse->aFlag ? (Char *) iargToPtr(va_arg(va, IArg)) :
+                                       (Char *) va_arg(va, Char *);
+            
+            /* Retrieve the line number from the argument list. */
+            site.line = parse->aFlag ? (Int) va_arg(va, IArg) : 
+                                       (Int) va_arg(va, Int);
+            
+            /* 
+             * Omit the 'mod' field, set it to 0.
+             * '0' is a safe sentinel value - the IDs for named modules are 
+             * 0x8000 and higher, and the IDs for unnamed modules go from 0x1
+             * to 0x7fff.
+             */
+            site.mod = 0;
+            
+            /* 
+             * Call putSite to format the file and line number.
+             * If a precision was specified, it will be used as the maximum
+             * string lengrth.
+             */
+            res = xdc_runtime_Text_putSite(&site, pbuf, parse->precis);
+            
+            /*
+             * Set the length to 0 to indicate to 'doPrint' that nothing should
+             * be copied from parse.ptr.
+             */
+            parse->len = 0;
+       
+            /* Update the minimum width field */
+            parse->width -= res;
+            
+            found = TRUE;
         }
+        
+        if (c == 'S') {
+            /* Retrieve the format string from the argument list */
+            parse->ptr = parse->aFlag ? 
+                (Char *) iargToPtr(va_arg(va, IArg)) :
+                (Char *) va_arg(va, Char *);
+            
+            /* Update pva before passing it to doPrint. */
+            *pva = va;
+            
+            /* Perform the recursive format. System_doPrint does not advance
+             * the buffer pointer, so it has to be done explicitly.
+             */
+            res = xdc_runtime_System_doPrint__I(*pbuf, parse->precis, 
+                                                parse->ptr, pva, parse->aFlag);
 
-        if (d < 0.0) {
-            d = -d;
-            negative = TRUE;
-            parse->zpad--;
+            if (*pbuf) {
+                *pbuf += res;
+            }
+            
+            /* Update the temporary variable with any changes to *pva */
+            va = *pva;
+            
+            /*
+             * Set the length to 0 to indicate to 'doPrint' that nothing should
+             * be copied from parse.ptr
+             */
+            parse->len = 0;
+
+            /* Update the minimum width field */
+            parse->width -= res;
+            
+            /* Indicate that we were able to interpret the specifier */
+            found = TRUE;
         }
-        else {
-            negative = FALSE;
-        }
-
-        /*
-         * output (error) if we can't print correct value
-         */
-        if (d > (double) LONG_MAX) {
-            parse->ptr = "(error)";
-            parse->len = 7;                /* strlen("(error)"); */
-            goto end;
-        }
-
-        /* Assumes four digits after decimal point. We are using a temporary
-         * double variable to force double-precision computations without 
-         * using --fp_mode=strict flag. See the description of that flag in
-         * the compiler's doc for a further explanation.
-         */
-        tmp = (d - (Long)d) * 1e4;
-        fract = (ULong)tmp;
-
-        parse->ptr = xdc_runtime_System_formatNum__I(parse->end, fract, 4, 10);
-        *(--parse->ptr) = '.';
-
-#if 0
-        /* eliminate trailing zeros */
-        do {
-        } while (*(--parse->end) == '0');
-        ++parse->end;
-#endif
-        parse->len = parse->end - parse->ptr;
-        /* format integer part (right to left!) */
-        parse->ptr = xdc_runtime_System_formatNum__I(parse->ptr,
-            (Long)d, parse->zpad - parse->len, 10);
-        if (negative) {
-            *(--parse->ptr) = '-';
-        }
-
-        parse->len = parse->end - parse->ptr;
-        found = TRUE;
+        
     }
+
+    if (c == 'f') {
+        /* support arguments _after_ optional float support */
+        if (parse->aFlag) {
+            (void)va_arg(va, IArg);
+        }
+        else {
+            (void)va_arg(va, double);
+        }
+    }    
 
     if (found == FALSE) {
         /* other character (like %) copy to output */
