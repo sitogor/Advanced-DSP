@@ -16,6 +16,6 @@ if (!(target instanceof xdc.module("xdc.bld.ITarget").Module)) {
 }
 
 /* configuro was passed the target's rootDir explicitly */
-target.rootDir = 'D:/ti/ccsv5/tools/compiler/c6000_7.4.4';
+target.rootDir = 'C:/ti/ccsv5/tools/compiler/c6000_7.4.4';
 
 Build.targets = [target];

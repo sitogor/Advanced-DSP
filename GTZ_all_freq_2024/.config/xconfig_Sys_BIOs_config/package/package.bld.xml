@@ -7,7 +7,7 @@
         <srcFile name="package/cfg/Sys_BIOs_config_pe66.c"/>
     </sources>
     <configscripts>
-        <srcFile name="C:/ti/workspace_marking/GTZ_all_freq_2022/Sys_BIOs_config.cfg"/>
+        <srcFile name="C:/Users/Tszyau/Desktop/Advanced_DSP_FPGA/Coursework 1/Advanced-DSP/GTZ_all_freq_2024/Sys_BIOs_config.cfg"/>
     </configscripts>
     <makefiles>
         <srcFile name="package.mak" src="package.bld"/>
@@ -44,7 +44,7 @@
         isPartial="false"
         xCfgScript="package/cfg/Sys_BIOs_config_pe66.cfg"
         xCfgPrefix="package/cfg/Sys_BIOs_config_pe66"
-        cfgScript="C:/ti/workspace_marking/GTZ_all_freq_2022/Sys_BIOs_config.cfg"
+        cfgScript="C:/Users/Tszyau/Desktop/Advanced_DSP_FPGA/Coursework 1/Advanced-DSP/GTZ_all_freq_2024/Sys_BIOs_config.cfg"
         cfgArgs="null"
         />
     </configurations>
@@ -56,7 +56,7 @@
         profile="release"
         xCfgScript="package/cfg/Sys_BIOs_config_pe66.cfg"
         xCfgPrefix="package/cfg/Sys_BIOs_config_pe66"
-        cfgScript="C:/ti/workspace_marking/GTZ_all_freq_2022/Sys_BIOs_config.cfg"
+        cfgScript="C:/Users/Tszyau/Desktop/Advanced_DSP_FPGA/Coursework 1/Advanced-DSP/GTZ_all_freq_2024/Sys_BIOs_config.cfg"
         cfgArgs="null"
         />
     </executables>

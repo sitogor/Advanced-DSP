@@ -9,7 +9,7 @@
  */
 
 
--l"C:\Users\sitogor\OneDrive - University of Bristol\Documents\Advanced DSP\Advanced-DSP\GTZ_all_freq_2024\Debug\configPkg\package\cfg\Sys_BIOs_config_pe66.oe66"
+-l"C:\Users\Tszyau\Desktop\Advanced_DSP_FPGA\Coursework_1\Advanced-DSP\GTZ_all_freq_2024\Debug\configPkg\package\cfg\Sys_BIOs_config_pe66.oe66"
 -l"C:\ti\uia_1_03_01_08\packages\ti\uia\services\lib\release\ti.uia.services.ae66"
 -l"C:\ti\uia_1_03_01_08\packages\ti\uia\sysbios\lib\release\ti.uia.sysbios.ae66"
 -l"C:\ti\uia_1_03_01_08\packages\ti\uia\family\c66\lib\release\ti.uia.family.c66.ae66"

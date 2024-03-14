@@ -1402,421 +1402,421 @@
    <modIdMap id="32770">
       <moduleName>xdc.runtime.Assert</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Assert.c</cFileName>
    </modIdMap>
    <modIdMap id="32771">
       <moduleName>xdc.runtime.Core</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32772">
       <moduleName>xdc.runtime.Defaults</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32773">
       <moduleName>xdc.runtime.Diags</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Diags.c</cFileName>
    </modIdMap>
    <modIdMap id="32774">
       <moduleName>xdc.runtime.Error</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Error.c</cFileName>
    </modIdMap>
    <modIdMap id="32775">
       <moduleName>xdc.runtime.Gate</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Gate.c</cFileName>
    </modIdMap>
    <modIdMap id="32776">
       <moduleName>xdc.runtime.Log</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Log.c</cFileName>
    </modIdMap>
    <modIdMap id="32777">
       <moduleName>xdc.runtime.LoggerBuf</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>LoggerBuf.c</cFileName>
    </modIdMap>
    <modIdMap id="32778">
       <moduleName>xdc.runtime.Main</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32779">
       <moduleName>xdc.runtime.Memory</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Memory.c</cFileName>
    </modIdMap>
    <modIdMap id="32780">
       <moduleName>xdc.runtime.Registry</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Registry.c</cFileName>
    </modIdMap>
    <modIdMap id="32781">
       <moduleName>xdc.runtime.Startup</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Startup.c</cFileName>
    </modIdMap>
    <modIdMap id="32782">
       <moduleName>xdc.runtime.System</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>System.c</cFileName>
    </modIdMap>
    <modIdMap id="32783">
       <moduleName>xdc.runtime.SysMin</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>SysMin.c</cFileName>
    </modIdMap>
    <modIdMap id="32784">
       <moduleName>xdc.runtime.SysStd</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>SysStd.c</cFileName>
    </modIdMap>
    <modIdMap id="32785">
       <moduleName>xdc.runtime.Text</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Text.c</cFileName>
    </modIdMap>
    <modIdMap id="32786">
       <moduleName>xdc.runtime.Timestamp</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>Timestamp.c</cFileName>
    </modIdMap>
    <modIdMap id="32787">
       <moduleName>xdc.runtime.Types</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="1">
       <moduleName>xdc.runtime.LoggerBuf_TimestampProxy</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="2">
       <moduleName>xdc.runtime.LoggerBuf_Module_GateProxy</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="3">
       <moduleName>xdc.runtime.Main_Module_GateProxy</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="4">
       <moduleName>xdc.runtime.Memory_HeapProxy</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="5">
       <moduleName>xdc.runtime.System_SupportProxy</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="6">
       <moduleName>xdc.runtime.System_Module_GateProxy</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="7">
       <moduleName>xdc.runtime.Timestamp_SupportProxy</moduleName>
       <packageVersion>2, 1, 0</packageVersion>
-      <packageBase>D:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
+      <packageBase>C:/ti/xdctools_3_25_03_72/packages/xdc/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32790">
       <moduleName>ti.uia.events.DvtTypes</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32791">
       <moduleName>ti.uia.events.UIABenchmark</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32792">
       <moduleName>ti.uia.events.UIAErr</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32793">
       <moduleName>ti.uia.events.UIAEvt</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32794">
       <moduleName>ti.uia.events.UIARoundtrip</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32795">
       <moduleName>ti.uia.events.UIAStatistic</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32796">
       <moduleName>ti.uia.events.UIASync</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/events/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32798">
       <moduleName>ti.uia.runtime.LogSync</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
       <cFileName>LogSync.c</cFileName>
    </modIdMap>
    <modIdMap id="32799">
       <moduleName>ti.uia.runtime.LoggerProbePoint</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
       <cFileName>LoggerProbePoint.c</cFileName>
    </modIdMap>
    <modIdMap id="32800">
       <moduleName>ti.uia.runtime.LoggerStopMode</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
       <cFileName>LoggerStopMode.c</cFileName>
    </modIdMap>
    <modIdMap id="32801">
       <moduleName>ti.uia.runtime.QueueDescriptor</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
       <cFileName>QueueDescriptor.c</cFileName>
    </modIdMap>
    <modIdMap id="32802">
       <moduleName>ti.uia.runtime.UIAMetaData</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="8">
       <moduleName>ti.uia.runtime.LogSync_CpuTimestampProxy</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="9">
       <moduleName>ti.uia.runtime.LogSync_GlobalTimestampProxy</moduleName>
       <packageVersion>1, 0, 0, 2</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/runtime/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32806">
       <moduleName>ti.sysbios.family.c64p.Exception</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c64p/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c64p/</packageBase>
       <cFileName>Exception.c</cFileName>
    </modIdMap>
    <modIdMap id="32807">
       <moduleName>ti.sysbios.family.c64p.Hwi</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c64p/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c64p/</packageBase>
       <cFileName>Hwi.c</cFileName>
    </modIdMap>
    <modIdMap id="32808">
       <moduleName>ti.sysbios.family.c64p.TimestampProvider</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c64p/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c64p/</packageBase>
       <cFileName>TimestampProvider.c</cFileName>
    </modIdMap>
    <modIdMap id="32810">
       <moduleName>ti.sysbios.hal.Hwi</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/hal/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/hal/</packageBase>
       <cFileName>Hwi.c</cFileName>
    </modIdMap>
    <modIdMap id="32811">
       <moduleName>ti.sysbios.hal.Timer</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/hal/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/hal/</packageBase>
       <cFileName>Timer.c</cFileName>
    </modIdMap>
    <modIdMap id="10">
       <moduleName>ti.sysbios.hal.Hwi_HwiProxy</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/hal/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/hal/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="11">
       <moduleName>ti.sysbios.hal.Timer_TimerProxy</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/hal/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/hal/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32813">
       <moduleName>ti.sysbios.knl.Clock</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>Clock.c</cFileName>
    </modIdMap>
    <modIdMap id="32814">
       <moduleName>ti.sysbios.knl.Idle</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>Idle.c</cFileName>
    </modIdMap>
    <modIdMap id="32815">
       <moduleName>ti.sysbios.knl.Intrinsics</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>Intrinsics.c</cFileName>
    </modIdMap>
    <modIdMap id="32816">
       <moduleName>ti.sysbios.knl.Event</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>Event.c</cFileName>
    </modIdMap>
    <modIdMap id="32817">
       <moduleName>ti.sysbios.knl.Queue</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>Queue.c</cFileName>
    </modIdMap>
    <modIdMap id="32818">
       <moduleName>ti.sysbios.knl.Semaphore</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>Semaphore.c</cFileName>
    </modIdMap>
    <modIdMap id="32819">
       <moduleName>ti.sysbios.knl.Swi</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>Swi.c</cFileName>
    </modIdMap>
    <modIdMap id="32820">
       <moduleName>ti.sysbios.knl.Task</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>Task.c</cFileName>
    </modIdMap>
    <modIdMap id="12">
       <moduleName>ti.sysbios.knl.Intrinsics_SupportProxy</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="13">
       <moduleName>ti.sysbios.knl.Task_SupportProxy</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/knl/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32821">
       <moduleName>ti.sysbios.BIOS</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/</packageBase>
       <cFileName>BIOS.c</cFileName>
    </modIdMap>
    <modIdMap id="14">
       <moduleName>ti.sysbios.BIOS_RtsGateProxy</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32824">
       <moduleName>ti.uia.family.c66.TimestampC66XGlobal</moduleName>
       <packageVersion>1, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/uia_1_03_01_08/packages/ti/uia/family/c66/</packageBase>
+      <packageBase>C:/ti/uia_1_03_01_08/packages/ti/uia/family/c66/</packageBase>
       <cFileName>TimestampC66XGlobal.c</cFileName>
    </modIdMap>
    <modIdMap id="32826">
       <moduleName>ti.sysbios.utils.Load</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/utils/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/utils/</packageBase>
       <cFileName>Load.c</cFileName>
    </modIdMap>
    <modIdMap id="32828">
       <moduleName>ti.sysbios.gates.GateHwi</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/gates/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/gates/</packageBase>
       <cFileName>GateHwi.c</cFileName>
    </modIdMap>
    <modIdMap id="32829">
       <moduleName>ti.sysbios.gates.GateMutex</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/gates/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/gates/</packageBase>
       <cFileName>GateMutex.c</cFileName>
    </modIdMap>
    <modIdMap id="32831">
       <moduleName>ti.sysbios.family.c66.Cache</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c66/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c66/</packageBase>
       <cFileName>Cache.c</cFileName>
    </modIdMap>
    <modIdMap id="32833">
       <moduleName>ti.sysbios.family.c62.TaskSupport</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c62/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c62/</packageBase>
       <cFileName>TaskSupport.c</cFileName>
    </modIdMap>
    <modIdMap id="32834">
       <moduleName>ti.sysbios.family.c62.IntrinsicsSupport</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c62/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c62/</packageBase>
       <cFileName>IntrinsicsSupport.c</cFileName>
    </modIdMap>
    <modIdMap id="32837">
       <moduleName>ti.sysbios.timers.timer64.Timer</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/timers/timer64/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/timers/timer64/</packageBase>
       <cFileName>Timer.c</cFileName>
    </modIdMap>
    <modIdMap id="15">
       <moduleName>ti.sysbios.timers.timer64.Timer_TimerSupportProxy</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/timers/timer64/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/timers/timer64/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <modIdMap id="32839">
       <moduleName>ti.sysbios.family.c64p.tci6488.TimerSupport</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c64p/tci6488/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/family/c64p/tci6488/</packageBase>
       <cFileName>TimerSupport.c</cFileName>
    </modIdMap>
    <modIdMap id="32841">
       <moduleName>ti.sysbios.heaps.HeapMem</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/heaps/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/heaps/</packageBase>
       <cFileName>HeapMem.c</cFileName>
    </modIdMap>
    <modIdMap id="16">
       <moduleName>ti.sysbios.heaps.HeapMem_Module_GateProxy</moduleName>
       <packageVersion>2, 0, 0, 0</packageVersion>
-      <packageBase>D:/ti/bios_6_35_04_50/packages/ti/sysbios/heaps/</packageBase>
+      <packageBase>C:/ti/bios_6_35_04_50/packages/ti/sysbios/heaps/</packageBase>
       <cFileName>null</cFileName>
    </modIdMap>
    <transport2>
