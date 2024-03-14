@@ -15,6 +15,11 @@ main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/_bsdmath.h
 main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/machine/_limits.h
 main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/mathf.h
 main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/mathl.h
+main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/time.h
+main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/xlocale/_time.h
+main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/string.h
+main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/xlocale/_string.h
+main.obj: ../gtz.h
 
 ../main.c: 
 C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/stdio.h: 
@@ -31,3 +36,8 @@ C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/_bsdmath.h:
 C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/machine/_limits.h: 
 C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/mathf.h: 
 C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/mathl.h: 
+C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/time.h: 
+C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/xlocale/_time.h: 
+C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/string.h: 
+C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/xlocale/_string.h: 
+../gtz.h: 
