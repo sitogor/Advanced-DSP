@@ -1,7 +1,7 @@
 ******************************************************************************
                TMS320C6x Linker PC v7.4.4                      
 ******************************************************************************
->> Linked Tue Mar 12 22:38:32 2024
+>> Linked Tue Mar 19 22:04:20 2024
 
 OUTPUT FILE NAME:   <GTZ_all_freq_2024.out>
 ENTRY POINT SYMBOL: "_c_int00"  address: 008122a0
@@ -50,8 +50,8 @@ section   page    origin      length       input sections
 .init_array 
 *          0    00800000    00000000     UNINITIALIZED
 
-xdc.meta   0    00800000    00000128     COPY SECTION
-                  00800000    00000128     Sys_BIOs_config_pe66.oe66 (xdc.meta)
+xdc.meta   0    00800000    00000130     COPY SECTION
+                  00800000    00000130     Sys_BIOs_config_pe66.oe66 (xdc.meta)
 
 .text      0    00800000    00016680     
                   00800000    00000ac0     main_gtz.obj (.text)
@@ -837,9 +837,9 @@ address    name
 008087c8   UIAPROBE_WRITEMEMORYRANGE
 00800000   __ASM__
 00820040   __CIOBUF_
-00800098   __ISA__
-008000b0   __PLAT__
-008000d8   __TARG__
+008000a0   __ISA__
+008000b8   __PLAT__
+008000e0   __TARG__
 00820de4   __TI_CINIT_Base
 00820e0c   __TI_CINIT_Limit
 00820dbc   __TI_Handler_Table_Base
@@ -857,7 +857,7 @@ ffffffff   __TI_pprof_out_hndl
 ffffffff   __TI_prof_data_size
 ffffffff   __TI_prof_data_start
 00810560   __TI_zero_init
-00800100   __TRDR__
+00800108   __TRDR__
 ffffffff   __binit__
 00802de0   __c6xabi_divd
 00811560   __c6xabi_divu
@@ -1717,10 +1717,10 @@ address    name
 00001000   __TI_STACK_SIZE
 00800000   __ASM__
 00800000   main
-00800098   __ISA__
-008000b0   __PLAT__
-008000d8   __TARG__
-00800100   __TRDR__
+008000a0   __ISA__
+008000b8   __PLAT__
+008000e0   __TARG__
+00800108   __TRDR__
 0080024c   clk_SWI_Read_Data
 008002a8   clk_SWI_GTZ_1633Hz
 008003ac   clk_SWI_GTZ_1477Hz
