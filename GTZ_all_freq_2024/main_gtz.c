@@ -99,8 +99,8 @@ void clk_SWI_Read_Data(UArg arg0) {
 	static int tick;
 	tick = Clock_getTicks();
 	sample = data[tick%NO_OF_SAMPLES];
-	//sample = (int) mag1*sin(2.0*PI*freq1*TICK_PERIOD*tick) + mag2*sin(2.0*PI*freq2*TICK_PERIOD*tick); // sampling for fixed point
-	//sample = sample >>12;
+//	sample = (int) mag1*sin(2.0*PI*freq1*TICK_PERIOD*tick) + (int) mag2*sin(2.0*PI*freq2*TICK_PERIOD*tick); // sampling for fixed point
+//	sample = sample >>12;
 }
 
 /*
@@ -135,10 +135,7 @@ void clk_SWI_GTZ_0697Hz(UArg arg0) {
 	/* ========================= */
 	N++;
 
-	//Record stop time
-	stop = Timestamp_get32();
-	//Record elapsed time
-	tdiff = stop-start;
+
 
 	if (N == 206) {
 	   	//Record start time
@@ -163,8 +160,12 @@ void clk_SWI_GTZ_0697Hz(UArg arg0) {
 		//Record stop time
 		stop = Timestamp_get32();
 		//Record elapsed time
-		tdiff_final = stop-start;
+		tdiff_final = tdiff + stop-start;
 	}
+	//Record stop time
+	stop = Timestamp_get32();
+	//Record elapsed time
+	tdiff = tdiff + stop-start;
 }
 
 void clk_SWI_GTZ_0770Hz(UArg arg0) {
@@ -194,10 +195,7 @@ void clk_SWI_GTZ_0770Hz(UArg arg0) {
 	/* ========================= */
 	N++;
 
-	//Record stop time
-	stop = Timestamp_get32();
-	//Record elapsed time
-	tdiff = stop-start;
+
 
 	if (N == 206) {
 	   	//Record start time
@@ -222,8 +220,12 @@ void clk_SWI_GTZ_0770Hz(UArg arg0) {
 		//Record stop time
 		stop = Timestamp_get32();
 		//Record elapsed time
-		tdiff_final = stop-start;
+		tdiff_final = tdiff + stop - start;
 	}
+	//Record stop time
+	stop = Timestamp_get32();
+	//Record elapsed time
+	tdiff = tdiff + stop - start;
 }
 
 void clk_SWI_GTZ_0852Hz(UArg arg0) {
@@ -253,11 +255,6 @@ void clk_SWI_GTZ_0852Hz(UArg arg0) {
 	/* ========================= */
 	N++;
 
-	//Record stop time
-	stop = Timestamp_get32();
-	//Record elapsed time
-	tdiff = stop-start;
-
 	if (N == 206) {
 	   	//Record start time
 		start = Timestamp_get32();
@@ -281,8 +278,12 @@ void clk_SWI_GTZ_0852Hz(UArg arg0) {
 		//Record stop time
 		stop = Timestamp_get32();
 		//Record elapsed time
-		tdiff_final = stop-start;
+		tdiff_final = tdiff + stop - start;
 	}
+	//Record stop time
+	stop = Timestamp_get32();
+	//Record elapsed time
+	tdiff = tdiff + stop - start;
 }
 
 void clk_SWI_GTZ_0941Hz(UArg arg0) {
@@ -312,10 +313,7 @@ void clk_SWI_GTZ_0941Hz(UArg arg0) {
 	/* ========================= */
 	N++;
 
-	//Record stop time
-	stop = Timestamp_get32();
-	//Record elapsed time
-	tdiff = stop-start;
+
 
 	if (N == 206) {
 	   	//Record start time
@@ -340,8 +338,12 @@ void clk_SWI_GTZ_0941Hz(UArg arg0) {
 		//Record stop time
 		stop = Timestamp_get32();
 		//Record elapsed time
-		tdiff_final = stop-start;
+		tdiff_final = tdiff + stop - start;
 	}
+	//Record stop time
+	stop = Timestamp_get32();
+	//Record elapsed time
+	tdiff = tdiff + stop - start;
 }
 
 void clk_SWI_GTZ_1209Hz(UArg arg0) {
@@ -371,10 +373,7 @@ void clk_SWI_GTZ_1209Hz(UArg arg0) {
 	/* ========================= */
 	N++;
 
-	//Record stop time
-	stop = Timestamp_get32();
-	//Record elapsed time
-	tdiff = stop-start;
+
 
 	if (N == 206) {
 	   	//Record start time
@@ -399,8 +398,12 @@ void clk_SWI_GTZ_1209Hz(UArg arg0) {
 		//Record stop time
 		stop = Timestamp_get32();
 		//Record elapsed time
-		tdiff_final = stop-start;
+		tdiff_final = tdiff + stop - start;
 	}
+	//Record stop time
+	stop = Timestamp_get32();
+	//Record elapsed time
+	tdiff = tdiff + stop - start;
 }
 
 void clk_SWI_GTZ_1336Hz(UArg arg0) {
@@ -430,10 +433,6 @@ void clk_SWI_GTZ_1336Hz(UArg arg0) {
 	/* ========================= */
 	N++;
 
-	//Record stop time
-	stop = Timestamp_get32();
-	//Record elapsed time
-	tdiff = stop-start;
 
 	if (N == 206) {
 	   	//Record start time
@@ -458,8 +457,12 @@ void clk_SWI_GTZ_1336Hz(UArg arg0) {
 		//Record stop time
 		stop = Timestamp_get32();
 		//Record elapsed time
-		tdiff_final = stop-start;
+		tdiff_final = tdiff + stop - start;
 	}
+	//Record stop time
+	stop = Timestamp_get32();
+	//Record elapsed time
+	tdiff = tdiff + stop - start;
 }
 
 void clk_SWI_GTZ_1477Hz(UArg arg0) {
@@ -489,10 +492,6 @@ void clk_SWI_GTZ_1477Hz(UArg arg0) {
 	/* ========================= */
 	N++;
 
-	//Record stop time
-	stop = Timestamp_get32();
-	//Record elapsed time
-	tdiff = stop-start;
 
 	if (N == 206) {
 	   	//Record start time
@@ -517,8 +516,12 @@ void clk_SWI_GTZ_1477Hz(UArg arg0) {
 		//Record stop time
 		stop = Timestamp_get32();
 		//Record elapsed time
-		tdiff_final = stop-start;
+		tdiff_final = tdiff + stop - start;
 	}
+	//Record stop time
+	stop = Timestamp_get32();
+	//Record elapsed time
+	tdiff = tdiff + stop - start;
 }
 
 void clk_SWI_GTZ_1633Hz(UArg arg0) {
@@ -548,11 +551,6 @@ void clk_SWI_GTZ_1633Hz(UArg arg0) {
 	/* ========================= */
 	N++;
 
-	//Record stop time
-	stop = Timestamp_get32();
-	//Record elapsed time
-	tdiff = stop-start;
-
 	if (N == 206) {
 	   	//Record start time
 		start = Timestamp_get32();
@@ -576,6 +574,10 @@ void clk_SWI_GTZ_1633Hz(UArg arg0) {
 		//Record stop time
 		stop = Timestamp_get32();
 		//Record elapsed time
-		tdiff_final = stop-start;
+		tdiff_final = tdiff + stop - start;
 	}
+	//Record stop time
+	stop = Timestamp_get32();
+	//Record elapsed time
+	tdiff = tdiff + stop - start;
 }
