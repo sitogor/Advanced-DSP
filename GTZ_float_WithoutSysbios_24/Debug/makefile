@@ -4,7 +4,7 @@
 
 SHELL = cmd.exe
 
-CG_TOOL_ROOT := C:/Users/Tszyau/Downloads/ti-cgt-c6000_8.3.12
+CG_TOOL_ROOT := C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12
 
 ORDERED_OBJS += \
 $(GEN_CMDS__FLAG) \
@@ -115,7 +115,7 @@ all: Floating_GTZ_Without_sysbios.out
 Floating_GTZ_Without_sysbios.out: $(OBJS) $(CMD_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: C6000 Linker'
-	"C:/Users/Tszyau/Downloads/ti-cgt-c6000_8.3.12/bin/cl6x" -mv6600 --abi=eabi -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Floating_GTZ_Without_sysbios.map" --heap_size=0x800 --stack_size=0x800 -i"C:/Users/Tszyau/Downloads/ti-cgt-c6000_8.3.12/lib" -i"C:/Users/Tszyau/Downloads/ti-cgt-c6000_8.3.12/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Floating_GTZ_Without_sysbios_linkInfo.xml" --rom_model -o "Floating_GTZ_Without_sysbios.out" $(ORDERED_OBJS)
+	"C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/bin/cl6x" -mv6600 --abi=eabi -g --diag_warning=225 --diag_wrap=off --display_error_number -z -m"Floating_GTZ_Without_sysbios.map" --heap_size=0x800 --stack_size=0x800 -i"C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/lib" -i"C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="Floating_GTZ_Without_sysbios_linkInfo.xml" --rom_model -o "Floating_GTZ_Without_sysbios.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

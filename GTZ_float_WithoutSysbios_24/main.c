@@ -4,6 +4,9 @@
 #include <string.h>
 #include "gtz.h"
 
+
+
+#define TIMER_FREQ 100000000 // Assuming a timer frequency of 100 MHz
 #define SAMPLING_RATE 8000.0  // Replace with your actual sampling rate
 #define NUM_TARGETS 8
 #define NUM_SAMPLES 205
@@ -20,6 +23,7 @@ char key;
 int i,n,N;
 float tick;
 
+
 float coef_float[8] = {1.703275, 1.635585, 1.562297, 1.482867, 1.163138, 1.008835, 0.790074 , 0.559454};
 char pad[4][4] = {{'1', '2', '3', 'A'}, {'4', '5', '6', 'B'}, {'7', '8', '9', 'C'}, {'*', '0', '#', 'D'}};
 float targetFrequencies[NUM_TARGETS] = {697.0, 770.0, 852.0, 941.0, 1209.0, 1336.0, 1477.0, 1633.0};
@@ -31,6 +35,13 @@ float max_float0, max_float1;
 int max_float_index[2];
 
 int mismatch = 0;
+
+long long getCurrentTimeMillis() {
+    struct timespec currentTime;
+    clock_gettime(CLOCK_MONOTONIC, &currentTime);
+    return (long long)currentTime.tv_sec * 1000LL + (long long)currentTime.tv_nsec / 1000000LL;
+}
+long long tdiff;
 
 // Function prototypes
 void goertzel_multi(const float samples[], int numSamples, float targetFrequencies[]);
@@ -67,6 +78,7 @@ void goertzel_multi(const float samples[], int numSamples, float targetFrequenci
 			magnitudes[i] = Goertzel_Value/10000000000;
 			// printf("\n magnitude %d is: %f", i, magnitudes[i]);
 			}
+
 	}
 
 }
@@ -241,6 +253,18 @@ void Generate_tones(char digit)		 {
 }
 
 int main() {
+     // Initialize the timer (assuming TMR0 is used)
+	TMR_TimerSetupStruct tmrSetup;
+	tmrSetup.timerEvent = TMR_TIMER_EVENT_OCCUR_PRD;
+	tmrSetup.timerPulseWidth = TMR_CLOCK_PERIOD_1;
+	tmrSetup.timerInputFrequency = TMR_INPUT_CLOCK_100MHZ;
+	tmrSetup.timerCounterControl = TMR_STOP;
+	tmrSetup.timerReloadCount = 0xFFFFFFFF;
+	TMR_config(TIMER0, &tmrSetup);
+
+	// Start the timer
+	TMR_start(TIMER0);
+
 	while(1){
 
         printf("\n Type a key and press return:\n");
