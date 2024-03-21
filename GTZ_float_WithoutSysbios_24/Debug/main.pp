@@ -20,7 +20,6 @@ main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/xlocale/_time.h
 main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/string.h
 main.obj: C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/xlocale/_string.h
 main.obj: ../gtz.h
-main.obj: ../csl_tmr.h
 
 ../main.c: 
 C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/stdio.h: 
@@ -42,4 +41,3 @@ C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/xlocale/_time.h:
 C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/string.h: 
 C:/Users/sitogor/Downloads/ti-cgt-c6000_8.3.12/include/xlocale/_string.h: 
 ../gtz.h: 
-../csl_tmr.h: 

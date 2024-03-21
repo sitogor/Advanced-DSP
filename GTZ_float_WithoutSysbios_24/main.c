@@ -6,6 +6,7 @@
 
 
 
+
 #define TIMER_FREQ 100000000 // Assuming a timer frequency of 100 MHz
 #define SAMPLING_RATE 8000.0  // Replace with your actual sampling rate
 #define NUM_TARGETS 8
@@ -36,12 +37,6 @@ int max_float_index[2];
 
 int mismatch = 0;
 
-long long getCurrentTimeMillis() {
-    struct timespec currentTime;
-    clock_gettime(CLOCK_MONOTONIC, &currentTime);
-    return (long long)currentTime.tv_sec * 1000LL + (long long)currentTime.tv_nsec / 1000000LL;
-}
-long long tdiff;
 
 // Function prototypes
 void goertzel_multi(const float samples[], int numSamples, float targetFrequencies[]);
@@ -253,34 +248,23 @@ void Generate_tones(char digit)		 {
 }
 
 int main() {
-     // Initialize the timer (assuming TMR0 is used)
-	TMR_TimerSetupStruct tmrSetup;
-	tmrSetup.timerEvent = TMR_TIMER_EVENT_OCCUR_PRD;
-	tmrSetup.timerPulseWidth = TMR_CLOCK_PERIOD_1;
-	tmrSetup.timerInputFrequency = TMR_INPUT_CLOCK_100MHZ;
-	tmrSetup.timerCounterControl = TMR_STOP;
-	tmrSetup.timerReloadCount = 0xFFFFFFFF;
-	TMR_config(TIMER0, &tmrSetup);
 
-	// Start the timer
-	TMR_start(TIMER0);
+
 
 	while(1){
 
-        printf("\n Type a key and press return:\n");
-        scanf("\n%c", &digit);
+        printf("\n Type a key and press return:");
+        scanf("\n %c", &digit);
 
+        if (mismatch==0){
+			Generate_tones(digit);
 
-        Generate_tones(digit);
+			// Call the function to calculate magnitudes for each frequency
+			goertzel_multi(samples, NUM_SAMPLES, targetFrequencies);
 
-        // Example usage
-
-        // Call the function to calculate magnitudes for each frequency
-        goertzel_multi(samples, NUM_SAMPLES, targetFrequencies);
-
-        // Detect the maximum frequency and interpret the key pressed
-        Frequency_detection(magnitudes, mismatch);
-
+			// Detect the maximum frequency and interpret the key pressed
+			Frequency_detection(magnitudes, mismatch);
+        }
 
 	}
 }
