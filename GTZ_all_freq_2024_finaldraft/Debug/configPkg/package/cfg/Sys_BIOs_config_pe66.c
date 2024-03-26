@@ -2687,7 +2687,7 @@ __FAR__ const xdc_SizeT ti_sysbios_utils_Load_Module_State_taskList__O = offseto
  *  Define absolute path prefix for this executable's
  *  configuration generated files.
  */
-xdc__META(__ASM__, "@(#)__ASM__ = C:/Users/Holyo/Documents/Advanced DSP/Advanced DSP Coursework/GTZ_all_freq_2024_finaldraft/Debug/configPkg/package/cfg/Sys_BIOs_config_pe66");
+xdc__META(__ASM__, "@(#)__ASM__ = C:/Users/sitogor/OneDrive - University of Bristol/Documents/Advanced DSP/Advanced-DSP/GTZ_all_freq_2024_finaldraft/Debug/configPkg/package/cfg/Sys_BIOs_config_pe66");
 
 /*
  *  ======== __ISA__ ========
@@ -5238,7 +5238,7 @@ __FAR__ const CT__ti_sysbios_knl_Clock_tickMode ti_sysbios_knl_Clock_tickMode__C
 __FAR__ const CT__ti_sysbios_knl_Clock_timerId ti_sysbios_knl_Clock_timerId__C = (xdc_UInt)(-0x0 - 1);
 
 /* tickPeriod__C */
-__FAR__ const CT__ti_sysbios_knl_Clock_tickPeriod ti_sysbios_knl_Clock_tickPeriod__C = (xdc_UInt32)0x7d;
+__FAR__ const CT__ti_sysbios_knl_Clock_tickPeriod ti_sysbios_knl_Clock_tickPeriod__C = (xdc_UInt32)0x1e;
 
 
 /*
@@ -6413,7 +6413,7 @@ ti_sysbios_timers_timer64_Timer_Object__ ti_sysbios_timers_timer64_Timer_Object_
         (xdc_UInt)0x0,  /* gpioDatDir */
         ti_sysbios_interfaces_ITimer_RunMode_CONTINUOUS,  /* runMode */
         ti_sysbios_interfaces_ITimer_StartMode_AUTO,  /* startMode */
-        (xdc_UInt)0x7d,  /* period */
+        (xdc_UInt)0x1e,  /* period */
         ti_sysbios_interfaces_ITimer_PeriodType_MICROSECS,  /* periodType */
         (xdc_UInt)0x0,  /* prescalar */
         (xdc_UInt)0xe,  /* intNum */

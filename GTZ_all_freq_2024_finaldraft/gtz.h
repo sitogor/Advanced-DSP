@@ -6,7 +6,7 @@
 
 #define SAMPLING_RATE  8000.0
 #define TICK_PERIOD    (1/SAMPLING_RATE)  /*125us set in clock.cfg */
-#define TIMEOUT        1
+#define TIMEOUT        1.6
 #define NO_OF_SAMPLES  (206*8)
 #define PI             3.1415926535897932384626433832795
 

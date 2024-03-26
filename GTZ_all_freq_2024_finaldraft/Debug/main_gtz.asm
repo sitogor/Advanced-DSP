@@ -1,6 +1,6 @@
 ;******************************************************************************
 ;* TMS320C6x C/C++ Codegen                                          PC v7.4.4 *
-;* Date/Time created: Mon Mar 25 22:47:06 2024                                *
+;* Date/Time created: Tue Mar 26 17:02:29 2024                                *
 ;******************************************************************************
 	.compiler_opts --abi=eabi --c64p_l1d_workaround=off --endian=little --hll_source=on --long_precision_bits=32 --mem_model:code=near --mem_model:const=data --mem_model:data=far_aggregates --object_format=elf --silicon_version=6600 --symdebug:dwarf --symdebug:dwarf_version=3 
 
@@ -31,7 +31,7 @@ $C$DW$CU	.dwtag  DW_TAG_compile_unit
 	.dwattr $C$DW$CU, DW_AT_name("../main_gtz.c")
 	.dwattr $C$DW$CU, DW_AT_producer("TI TMS320C6x C/C++ Codegen PC v7.4.4 Copyright (c) 1996-2013 Texas Instruments Incorporated")
 	.dwattr $C$DW$CU, DW_AT_TI_version(0x01)
-	.dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\Holyo\Documents\Advanced DSP\Advanced DSP Coursework\GTZ_all_freq_2024_finaldraft\Debug")
+	.dwattr $C$DW$CU, DW_AT_comp_dir("C:\Users\sitogor\OneDrive - University of Bristol\Documents\Advanced DSP\Advanced-DSP\GTZ_all_freq_2024_finaldraft\Debug")
 
 $C$DW$1	.dwtag  DW_TAG_subprogram, DW_AT_name("_add2")
 	.dwattr $C$DW$1, DW_AT_TI_symbol_name("_add2")
@@ -540,7 +540,7 @@ delay_1$36:
 delay_2$37:
 	.bits	0,32			; delay_2$37 @ 0
 
-;	C:\ti\ccsv5\tools\compiler\c6000_7.4.4\bin\opt6x.exe C:\\Users\\Holyo\\AppData\\Local\\Temp\\165162 C:\\Users\\Holyo\\AppData\\Local\\Temp\\165164 
+;	C:\ti\ccsv5\tools\compiler\c6000_7.4.4\bin\opt6x.exe C:\\Users\\sitogor\\AppData\\Local\\Temp\\057082 C:\\Users\\sitogor\\AppData\\Local\\Temp\\057084 
 	.sect	".text"
 	.clink
 	.global	main
@@ -992,8 +992,8 @@ $C$RL14:   ; CALL OCCURS {ti_sysbios_knl_Clock_getTicks__E} {0}  ; |111|
            LDH     .D1T1   *A3,A3            ; |112| 
            NOP             4
            STW     .D2T1   A3,*+DP(sample)   ; |112| 
-	.dwpsn	file "../main_gtz.c",line 117,column 1,is_stmt,isa 0
-           LDW     .D2T2   *++SP(8),B3       ; |117| 
+	.dwpsn	file "../main_gtz.c",line 118,column 1,is_stmt,isa 0
+           LDW     .D2T2   *++SP(8),B3       ; |118| 
            NOP             4
 	.dwcfi	cfa_offset, 0
 	.dwcfi	restore_reg, 19
@@ -1001,10 +1001,10 @@ $C$RL14:   ; CALL OCCURS {ti_sysbios_knl_Clock_getTicks__E} {0}  ; |111|
 $C$DW$96	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$96, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$96, DW_AT_TI_return
-           RETNOP  .S2     B3,5              ; |117| 
-           ; BRANCH OCCURS {B3}              ; |117| 
+           RETNOP  .S2     B3,5              ; |118| 
+           ; BRANCH OCCURS {B3}              ; |118| 
 	.dwattr $C$DW$92, DW_AT_TI_end_file("../main_gtz.c")
-	.dwattr $C$DW$92, DW_AT_TI_end_line(0x75)
+	.dwattr $C$DW$92, DW_AT_TI_end_line(0x76)
 	.dwattr $C$DW$92, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$92
@@ -1019,13 +1019,13 @@ $C$DW$97	.dwtag  DW_TAG_subprogram, DW_AT_name("clk_SWI_GTZ_1477_1633Hz")
 	.dwattr $C$DW$97, DW_AT_TI_symbol_name("clk_SWI_GTZ_1477_1633Hz")
 	.dwattr $C$DW$97, DW_AT_external
 	.dwattr $C$DW$97, DW_AT_TI_begin_file("../main_gtz.c")
-	.dwattr $C$DW$97, DW_AT_TI_begin_line(0x174)
+	.dwattr $C$DW$97, DW_AT_TI_begin_line(0x17b)
 	.dwattr $C$DW$97, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$97, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$97, DW_AT_decl_line(0x174)
+	.dwattr $C$DW$97, DW_AT_decl_line(0x17b)
 	.dwattr $C$DW$97, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$97, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "../main_gtz.c",line 372,column 40,is_stmt,address clk_SWI_GTZ_1477_1633Hz,isa 0
+	.dwpsn	file "../main_gtz.c",line 379,column 40,is_stmt,address clk_SWI_GTZ_1477_1633Hz,isa 0
 
 	.dwfde $C$DW$CIE, clk_SWI_GTZ_1477_1633Hz
 $C$DW$98	.dwtag  DW_TAG_variable, DW_AT_name("start2")
@@ -1080,62 +1080,62 @@ $C$DW$104	.dwtag  DW_TAG_formal_parameter, DW_AT_name("arg0")
 ;******************************************************************************
 clk_SWI_GTZ_1477_1633Hz:
 ;** --------------------------------------------------------------------------*
-;** 379	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
-;** 381	-----------------------    C$11 = &coef[0];
-;** 381	-----------------------    v$1 = (int)C$11[7]<<16|(int)(unsigned)(unsigned short)C$11[6];
-;** 381	-----------------------    coeffpair = v$1;
-;** 395	-----------------------    C$9 = delay_1;
-;** 395	-----------------------    prod1 = _dshr(_mpy2ll(C$9, v$1), 14u);
-;** 403	-----------------------    C$10 = sample;
-;** 403	-----------------------    delay = _add2(_sub2((int)(short)_hill(prod1)<<16|(int)(unsigned)(unsigned short)_loll(prod1), delay_2), (int)(short)C$10<<16|(int)(unsigned)(unsigned short)C$10);
-;** 409	-----------------------    delay_2 = C$9;
-;** 410	-----------------------    delay_1 = delay;
-;** 411	-----------------------    N = N+1;
-;** 413	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
-;** 415	-----------------------    tdiff2 = stop2-start2;
-;** 417	-----------------------    if ( N != 206 ) goto g3;
+;** 386	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
+;** 388	-----------------------    C$11 = &coef[0];
+;** 388	-----------------------    v$1 = (int)C$11[7]<<16|(int)(unsigned)(unsigned short)C$11[6];
+;** 388	-----------------------    coeffpair = v$1;
+;** 402	-----------------------    C$9 = delay_1;
+;** 402	-----------------------    prod1 = _dshr(_mpy2ll(C$9, v$1), 14u);
+;** 410	-----------------------    C$10 = sample;
+;** 410	-----------------------    delay = _add2(_sub2((int)(short)_hill(prod1)<<16|(int)(unsigned)(unsigned short)_loll(prod1), delay_2), (int)(short)C$10<<16|(int)(unsigned)(unsigned short)C$10);
+;** 416	-----------------------    delay_2 = C$9;
+;** 417	-----------------------    delay_1 = delay;
+;** 418	-----------------------    N = N+1;
+;** 420	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
+;** 422	-----------------------    tdiff2 = stop2-start2;
+;** 424	-----------------------    if ( N != 206 ) goto g3;
 	.dwcfi	cfa_offset, 0
-           STW     .D2T2   B11,*SP--(8)      ; |372| 
+           STW     .D2T2   B11,*SP--(8)      ; |379| 
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 27, 0
-           STW     .D2T2   B10,*SP--(8)      ; |372| 
+           STW     .D2T2   B10,*SP--(8)      ; |379| 
 	.dwcfi	cfa_offset, 16
 	.dwcfi	save_reg_to_mem, 26, -8
-           STW     .D2T2   B3,*SP--(8)       ; |372| 
+           STW     .D2T2   B3,*SP--(8)       ; |379| 
 	.dwcfi	cfa_offset, 24
 	.dwcfi	save_reg_to_mem, 19, 0
 $C$DW$105	.dwtag  DW_TAG_variable, DW_AT_name("$O$C1")
 	.dwattr $C$DW$105, DW_AT_TI_symbol_name("$O$C1")
 	.dwattr $C$DW$105, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$105, DW_AT_location[DW_OP_reg24]
+	.dwattr $C$DW$105, DW_AT_location[DW_OP_reg7]
 $C$DW$106	.dwtag  DW_TAG_variable, DW_AT_name("$O$C2")
 	.dwattr $C$DW$106, DW_AT_TI_symbol_name("$O$C2")
 	.dwattr $C$DW$106, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$106, DW_AT_location[DW_OP_reg5]
+	.dwattr $C$DW$106, DW_AT_location[DW_OP_reg8]
 $C$DW$107	.dwtag  DW_TAG_variable, DW_AT_name("$O$C3")
 	.dwattr $C$DW$107, DW_AT_TI_symbol_name("$O$C3")
 	.dwattr $C$DW$107, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$107, DW_AT_location[DW_OP_reg21]
+	.dwattr $C$DW$107, DW_AT_location[DW_OP_reg20]
 $C$DW$108	.dwtag  DW_TAG_variable, DW_AT_name("$O$C4")
 	.dwattr $C$DW$108, DW_AT_TI_symbol_name("$O$C4")
 	.dwattr $C$DW$108, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$108, DW_AT_location[DW_OP_reg23]
+	.dwattr $C$DW$108, DW_AT_location[DW_OP_reg6]
 $C$DW$109	.dwtag  DW_TAG_variable, DW_AT_name("$O$C5")
 	.dwattr $C$DW$109, DW_AT_TI_symbol_name("$O$C5")
 	.dwattr $C$DW$109, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$109, DW_AT_location[DW_OP_reg4]
+	.dwattr $C$DW$109, DW_AT_location[DW_OP_reg3]
 $C$DW$110	.dwtag  DW_TAG_variable, DW_AT_name("$O$C6")
 	.dwattr $C$DW$110, DW_AT_TI_symbol_name("$O$C6")
 	.dwattr $C$DW$110, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$110, DW_AT_location[DW_OP_reg22]
+	.dwattr $C$DW$110, DW_AT_location[DW_OP_reg4]
 $C$DW$111	.dwtag  DW_TAG_variable, DW_AT_name("$O$C7")
 	.dwattr $C$DW$111, DW_AT_TI_symbol_name("$O$C7")
 	.dwattr $C$DW$111, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$111, DW_AT_location[DW_OP_reg25]
+	.dwattr $C$DW$111, DW_AT_location[DW_OP_reg22]
 $C$DW$112	.dwtag  DW_TAG_variable, DW_AT_name("$O$C8")
 	.dwattr $C$DW$112, DW_AT_TI_symbol_name("$O$C8")
 	.dwattr $C$DW$112, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$112, DW_AT_location[DW_OP_reg22]
+	.dwattr $C$DW$112, DW_AT_location[DW_OP_reg21]
 $C$DW$113	.dwtag  DW_TAG_variable, DW_AT_name("$O$C9")
 	.dwattr $C$DW$113, DW_AT_TI_symbol_name("$O$C9")
 	.dwattr $C$DW$113, DW_AT_type(*$C$DW$T$10)
@@ -1171,7 +1171,7 @@ $C$DW$120	.dwtag  DW_TAG_variable, DW_AT_name("prod1")
 $C$DW$121	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$001")
 	.dwattr $C$DW$121, DW_AT_TI_symbol_name("$O$ILP$s32x2$001")
 	.dwattr $C$DW$121, DW_AT_type(*$C$DW$T$1124)
-	.dwattr $C$DW$121, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$121, DW_AT_location[DW_OP_reg6]
 $C$DW$122	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$002")
 	.dwattr $C$DW$122, DW_AT_TI_symbol_name("$O$ILP$s32x2$002")
 	.dwattr $C$DW$122, DW_AT_type(*$C$DW$T$1124)
@@ -1179,206 +1179,211 @@ $C$DW$122	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$002")
 $C$DW$123	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$003")
 	.dwattr $C$DW$123, DW_AT_TI_symbol_name("$O$ILP$s32x2$003")
 	.dwattr $C$DW$123, DW_AT_type(*$C$DW$T$1124)
-	.dwattr $C$DW$123, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$123, DW_AT_location[DW_OP_reg24]
 $C$DW$124	.dwtag  DW_TAG_variable, DW_AT_name("$O$CSE$s16x2$004")
 	.dwattr $C$DW$124, DW_AT_TI_symbol_name("$O$CSE$s16x2$004")
 	.dwattr $C$DW$124, DW_AT_type(*$C$DW$T$975)
-	.dwattr $C$DW$124, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$124, DW_AT_location[DW_OP_reg3]
 $C$DW$125	.dwtag  DW_TAG_variable, DW_AT_name("$O$CSE$s16x2$005")
 	.dwattr $C$DW$125, DW_AT_TI_symbol_name("$O$CSE$s16x2$005")
 	.dwattr $C$DW$125, DW_AT_type(*$C$DW$T$975)
 	.dwattr $C$DW$125, DW_AT_location[DW_OP_reg3]
-	.dwpsn	file "../main_gtz.c",line 379,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 386,column 2,is_stmt,isa 0
 $C$DW$126	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$126, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$126, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$126, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL15:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |379| 
+$C$RL15:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |386| 
 ;** --------------------------------------------------------------------------*
-           STW     .D2T1   A4,*+DP(start2$29) ; |379| 
-	.dwpsn	file "../main_gtz.c",line 381,column 2,is_stmt,isa 0
+           STW     .D2T1   A4,*+DP(start2$29) ; |386| 
+	.dwpsn	file "../main_gtz.c",line 388,column 2,is_stmt,isa 0
            MVKL    .S1     coef,A3
            MVKH    .S1     coef,A3
-           LDHU    .D1T1   *+A3(12),A4       ; |381| 
-           LDH     .D1T1   *+A3(14),A3       ; |381| 
+           LDHU    .D1T1   *+A3(12),A4       ; |388| 
+           LDH     .D1T1   *+A3(14),A3       ; |388| 
            NOP             4
-           PACK2   .L1     A3,A4,A3          ; |381| 
-           STW     .D2T1   A3,*+DP(coeffpair) ; |381| 
-	.dwpsn	file "../main_gtz.c",line 395,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_1$36),B5 ; |395| 
+           PACK2   .L1     A3,A4,A3          ; |388| 
+           STW     .D2T1   A3,*+DP(coeffpair) ; |388| 
+	.dwpsn	file "../main_gtz.c",line 402,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(delay_1$36),B5 ; |402| 
            NOP             4
-           MPY2    .M2X    B5,A3,B7:B6       ; |395| 
+           MPY2    .M2X    B5,A3,B7:B6       ; |402| 
            NOP             3
-           DSHR    .S2     B7:B6,14,B11:B10  ; |395| 
-	.dwpsn	file "../main_gtz.c",line 403,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(sample),B4   ; |403| 
-           LDW     .D2T2   *+DP(delay_2$37),B6 ; |403| 
-           PACK2   .L2     B11,B10,B7        ; |403| 
-           NOP             3
-
-           PACK2   .L2     B4,B4,B4          ; |403| 
-||         SUB2    .S2     B7,B6,B6          ; |403| 
-
-           ADD2    .L2     B6,B4,B4          ; |403| 
-	.dwpsn	file "../main_gtz.c",line 409,column 2,is_stmt,isa 0
-           STW     .D2T2   B5,*+DP(delay_2$37) ; |409| 
+           DSHR    .S2     B7:B6,14,B11:B10  ; |402| 
 	.dwpsn	file "../main_gtz.c",line 410,column 2,is_stmt,isa 0
-           STW     .D2T2   B4,*+DP(delay_1$36) ; |410| 
-	.dwpsn	file "../main_gtz.c",line 411,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$31),B4     ; |411| 
+           LDW     .D2T2   *+DP(sample),B4   ; |410| 
+           LDW     .D2T2   *+DP(delay_2$37),B6 ; |410| 
+           PACK2   .L2     B11,B10,B7        ; |410| 
+           NOP             3
+
+           PACK2   .L2     B4,B4,B4          ; |410| 
+||         SUB2    .S2     B7,B6,B6          ; |410| 
+
+           ADD2    .L2     B6,B4,B4          ; |410| 
+	.dwpsn	file "../main_gtz.c",line 416,column 2,is_stmt,isa 0
+           STW     .D2T2   B5,*+DP(delay_2$37) ; |416| 
+	.dwpsn	file "../main_gtz.c",line 417,column 2,is_stmt,isa 0
+           STW     .D2T2   B4,*+DP(delay_1$36) ; |417| 
+	.dwpsn	file "../main_gtz.c",line 418,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$31),B4     ; |418| 
            NOP             4
-           ADD     .L2     1,B4,B4           ; |411| 
-           STW     .D2T2   B4,*+DP(N$31)     ; |411| 
-	.dwpsn	file "../main_gtz.c",line 413,column 2,is_stmt,isa 0
+           ADD     .L2     1,B4,B4           ; |418| 
+           STW     .D2T2   B4,*+DP(N$31)     ; |418| 
+	.dwpsn	file "../main_gtz.c",line 420,column 2,is_stmt,isa 0
 $C$DW$127	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$127, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$127, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$127, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL16:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |413| 
+$C$RL16:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |420| 
 ;** --------------------------------------------------------------------------*
-	.dwpsn	file "../main_gtz.c",line 415,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start2$29),B4 ; |415| 
+	.dwpsn	file "../main_gtz.c",line 422,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start2$29),B4 ; |422| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |415| 
-           STW     .D2T2   B4,*+DP(tdiff2)   ; |415| 
-	.dwpsn	file "../main_gtz.c",line 417,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$31),B4     ; |417| 
-           MVK     .S2     206,B5            ; |417| 
+           SUB     .L2X    A4,B4,B4          ; |422| 
+           STW     .D2T2   B4,*+DP(tdiff2)   ; |422| 
+	.dwpsn	file "../main_gtz.c",line 424,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$31),B4     ; |424| 
+           MVK     .S2     206,B5            ; |424| 
            NOP             3
-           CMPEQ   .L2     B4,B5,B0          ; |417| 
-   [!B0]   BNOP    .S1     $C$L3,5           ; |417| 
-           ; BRANCHCC OCCURS {$C$L3}         ; |417| 
+           CMPEQ   .L2     B4,B5,B0          ; |424| 
+   [!B0]   BNOP    .S1     $C$L3,5           ; |424| 
+           ; BRANCHCC OCCURS {$C$L3}         ; |424| 
 ;** --------------------------------------------------------------------------*
-;** 418	-----------------------    prod1_0697_0777 = prod1;
-;** 421	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
-;** 422	-----------------------    C$8 = delay_1;
-;** 422	-----------------------    CSE$s16x2$004 = (short[2])C$8;
-;** 422	-----------------------    ILP$s32x2$001 = _mpy2ll(CSE$s16x2$004, CSE$s16x2$004);
-;** 422	-----------------------    prod1f1 = C$4 = _loll((unsigned long long)ILP$s32x2$001);
-;** 423	-----------------------    prod1f2 = C$1 = _hill((unsigned long long)ILP$s32x2$001);
-;** 424	-----------------------    C$7 = delay_2;
-;** 424	-----------------------    CSE$s16x2$005 = (short[2])C$7;
-;** 424	-----------------------    ILP$s32x2$002 = _mpy2ll(CSE$s16x2$005, CSE$s16x2$005);
-;** 424	-----------------------    prod2f1 = C$5 = _loll((unsigned long long)ILP$s32x2$002);
-;** 425	-----------------------    prod2f2 = C$2 = _hill((unsigned long long)ILP$s32x2$002);
-;** 426	-----------------------    ILP$s32x2$003 = _mpy2ll((short[2])C$8, (short[2])coeffpair);
-;** 428	-----------------------    prod3f1 = C$6 = _mpy((int)_loll((unsigned long long)ILP$s32x2$003), C$7);
-;** 429	-----------------------    prod3f2 = C$3 = _mpyhl(C$7, (int)_hill((unsigned long long)ILP$s32x2$003));
-;** 430	-----------------------    v$10 = (int)C$4+(int)C$5-C$6;
-;** 431	-----------------------    v$11 = (int)C$1+(int)C$2-C$3;
-;** 432	-----------------------    N = 0;
-;** 433	-----------------------    delay_2 = 0;
-;** 433	-----------------------    delay_1 = 0;
-;** 435	-----------------------    ((int (*)[2])gtz_out)[3] = __pack12(v$10, v$11);
-;** 436	-----------------------    Goertzel_Value1 = 0;
-;** 437	-----------------------    Goertzel_Value2 = 0;
-;** 440	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
-;** 442	-----------------------    tdiff_final2 = stop2-start2;
-;** 443	-----------------------    flag = 1;
-;** 444	-----------------------    N = 0;
+;** 425	-----------------------    prod1_0697_0777 = prod1;
+;** 428	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
+;** 429	-----------------------    C$8 = delay_1;
+;** 429	-----------------------    CSE$s16x2$004 = (short[2])C$8;
+;** 429	-----------------------    ILP$s32x2$001 = _mpy2ll(CSE$s16x2$004, CSE$s16x2$004);
+;** 429	-----------------------    prod1f1 = C$4 = _loll((unsigned long long)ILP$s32x2$001);
+;** 430	-----------------------    prod1f2 = C$1 = _hill((unsigned long long)ILP$s32x2$001);
+;** 431	-----------------------    C$7 = delay_2;
+;** 431	-----------------------    CSE$s16x2$005 = (short[2])C$7;
+;** 431	-----------------------    ILP$s32x2$002 = _mpy2ll(CSE$s16x2$005, CSE$s16x2$005);
+;** 431	-----------------------    prod2f1 = C$5 = _loll((unsigned long long)ILP$s32x2$002);
+;** 432	-----------------------    prod2f2 = C$2 = _hill((unsigned long long)ILP$s32x2$002);
+;** 433	-----------------------    ILP$s32x2$003 = _mpy2ll((short[2])C$8, (short[2])coeffpair);
+;** 437	-----------------------    prod3f1 = C$6 = _mpy((int)_dshr((long long)(int)_loll((unsigned long long)ILP$s32x2$003), 14u), C$7);
+;** 438	-----------------------    prod3f2 = C$3 = _mpyhl(C$7, (int)_dshr((long long)(int)_hill((unsigned long long)ILP$s32x2$003), 14u));
+;** 439	-----------------------    v$10 = (int)C$4+(int)C$5-C$6;
+;** 440	-----------------------    v$11 = (int)C$1+(int)C$2-C$3;
+;** 441	-----------------------    N = 0;
+;** 442	-----------------------    delay_2 = 0;
+;** 442	-----------------------    delay_1 = 0;
+;** 444	-----------------------    ((int (*)[2])gtz_out)[3] = __pack12(v$10, v$11);
+;** 445	-----------------------    Goertzel_Value1 = 0;
+;** 446	-----------------------    Goertzel_Value2 = 0;
+;** 449	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
+;** 451	-----------------------    tdiff_final2 = stop2-start2;
+;** 452	-----------------------    flag = 1;
+;** 453	-----------------------    N = 0;
 ;**	-----------------------g3:
 ;**  	-----------------------    return;
-	.dwpsn	file "../main_gtz.c",line 418,column 3,is_stmt,isa 0
-           STW     .D2T2   B10,*+DP(prod1_0697_0777) ; |418| 
-           STW     .D2T2   B11,*+DP(prod1_0697_0777+4) ; |418| 
-	.dwpsn	file "../main_gtz.c",line 421,column 3,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 425,column 3,is_stmt,isa 0
+           STW     .D2T2   B10,*+DP(prod1_0697_0777) ; |425| 
+           STW     .D2T2   B11,*+DP(prod1_0697_0777+4) ; |425| 
+	.dwpsn	file "../main_gtz.c",line 428,column 3,is_stmt,isa 0
 $C$DW$128	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$128, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$128, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$128, DW_AT_TI_call
-           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |421| 
-           ADDKPC  .S2     $C$RL17,B3,4      ; |421| 
-$C$RL17:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |421| 
+           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |428| 
+           ADDKPC  .S2     $C$RL17,B3,4      ; |428| 
+$C$RL17:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |428| 
 ;** --------------------------------------------------------------------------*
-           STW     .D2T1   A4,*+DP(start2$29) ; |421| 
-	.dwpsn	file "../main_gtz.c",line 422,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_1$36),B6 ; |422| 
-           NOP             4
-           MV      .L2     B6,B4             ; |422| 
-           MPY2    .M2     B4,B4,B5:B4       ; |422| 
-           NOP             3
-           MV      .L2     B4,B7             ; |422| 
-           STW     .D2T2   B7,*+DP(prod1f1)  ; |422| 
-	.dwpsn	file "../main_gtz.c",line 423,column 3,is_stmt,isa 0
-           MV      .L2     B5,B8             ; |423| 
-           STW     .D2T2   B8,*+DP(prod1f2)  ; |423| 
-	.dwpsn	file "../main_gtz.c",line 424,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_2$37),B9 ; |424| 
-           NOP             4
-           MV      .L1X    B9,A3             ; |424| 
-           MPY2    .M1     A3,A3,A5:A4       ; |424| 
-           NOP             3
-           STW     .D2T1   A4,*+DP(prod2f1)  ; |424| 
-	.dwpsn	file "../main_gtz.c",line 425,column 3,is_stmt,isa 0
-           STW     .D2T1   A5,*+DP(prod2f2)  ; |425| 
-	.dwpsn	file "../main_gtz.c",line 426,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(coeffpair),B4 ; |426| 
-           NOP             4
-           MPY2    .M2     B6,B4,B5:B4       ; |426| 
-           NOP             3
-	.dwpsn	file "../main_gtz.c",line 428,column 3,is_stmt,isa 0
-           MPY     .M2     B4,B9,B6          ; |428| 
-           NOP             1
-           STW     .D2T2   B6,*+DP(prod3f1)  ; |428| 
+           STW     .D2T1   A4,*+DP(start2$29) ; |428| 
 	.dwpsn	file "../main_gtz.c",line 429,column 3,is_stmt,isa 0
-           MPYHL   .M2     B9,B5,B5          ; |429| 
-           NOP             1
-           STW     .D2T2   B5,*+DP(prod3f2)  ; |429| 
+           LDW     .D2T2   *+DP(delay_1$36),B5 ; |429| 
+           NOP             4
+           MV      .L1X    B5,A3             ; |429| 
+           MPY2    .M1     A3,A3,A7:A6       ; |429| 
+           NOP             3
+           STW     .D2T1   A6,*+DP(prod1f1)  ; |429| 
 	.dwpsn	file "../main_gtz.c",line 430,column 3,is_stmt,isa 0
-           ADD     .L2X    A4,B7,B4          ; |430| 
-           SUB     .L2     B4,B6,B6          ; |430| 
+           STW     .D2T1   A7,*+DP(prod1f2)  ; |430| 
 	.dwpsn	file "../main_gtz.c",line 431,column 3,is_stmt,isa 0
-           ADD     .L1X    A5,B8,A3          ; |431| 
-           NOP             1
-           SUB     .L2X    A3,B5,B7          ; |431| Define a twin register
+           LDW     .D2T2   *+DP(delay_2$37),B6 ; |431| 
+           NOP             4
+           MV      .L1X    B6,A3             ; |431| 
+           MPY2    .M1     A3,A3,A5:A4       ; |431| 
+           NOP             3
+           MV      .L1     A4,A3             ; |431| 
+           STW     .D2T1   A3,*+DP(prod2f1)  ; |431| 
 	.dwpsn	file "../main_gtz.c",line 432,column 3,is_stmt,isa 0
-           ZERO    .L2     B4                ; |432| 
-           STW     .D2T2   B4,*+DP(N$31)     ; |432| 
+           MV      .L1     A5,A8             ; |432| 
+           STW     .D2T1   A8,*+DP(prod2f2)  ; |432| 
 	.dwpsn	file "../main_gtz.c",line 433,column 3,is_stmt,isa 0
-
-           MV      .L1X    B4,A3             ; |433| 
-||         STW     .D2T2   B4,*+DP(delay_1$36) ; |433| 
-
-           STW     .D2T1   A3,*+DP(delay_2$37) ; |433| 
-	.dwpsn	file "../main_gtz.c",line 435,column 3,is_stmt,isa 0
-           MVKL    .S2     gtz_out+24,B4
-           MVKH    .S2     gtz_out+24,B4
-           STDW    .D2T2   B7:B6,*B4         ; |435| 
-	.dwpsn	file "../main_gtz.c",line 436,column 3,is_stmt,isa 0
-           STW     .D2T1   A3,*+DP(Goertzel_Value1$33) ; |436| 
+           LDW     .D2T2   *+DP(coeffpair),B4 ; |433| 
+           NOP             4
+           MPY2    .M2     B5,B4,B9:B8       ; |433| 
+           NOP             4
 	.dwpsn	file "../main_gtz.c",line 437,column 3,is_stmt,isa 0
-           STW     .D2T1   A3,*+DP(Goertzel_Value2$32) ; |437| 
+           SHR     .S1X    B8,31,A5          ; |437| 
+           MV      .L1X    B8,A4             ; |437| 
+           DSHR    .S1     A5:A4,14,A5:A4    ; |437| 
+           MPY     .M1X    A4,B6,A4          ; |437| 
+           NOP             1
+           STW     .D2T1   A4,*+DP(prod3f1)  ; |437| 
+	.dwpsn	file "../main_gtz.c",line 438,column 3,is_stmt,isa 0
+
+           SHR     .S2     B9,31,B5          ; |438| 
+||         MV      .L2     B9,B4             ; |438| 
+
+           DSHR    .S2     B5:B4,14,B5:B4    ; |438| 
+           MPYHL   .M2     B6,B4,B4          ; |438| 
+           NOP             1
+           STW     .D2T2   B4,*+DP(prod3f2)  ; |438| 
+	.dwpsn	file "../main_gtz.c",line 439,column 3,is_stmt,isa 0
+           ADD     .L1     A3,A6,A3          ; |439| 
+           SUB     .L1     A3,A4,A4          ; |439| 
 	.dwpsn	file "../main_gtz.c",line 440,column 3,is_stmt,isa 0
+           ADD     .L1     A8,A7,A3          ; |440| 
+           SUB     .L1X    A3,B4,A5          ; |440| 
+	.dwpsn	file "../main_gtz.c",line 441,column 3,is_stmt,isa 0
+           ZERO    .L2     B4                ; |441| 
+           STW     .D2T2   B4,*+DP(N$31)     ; |441| 
+	.dwpsn	file "../main_gtz.c",line 442,column 3,is_stmt,isa 0
+           STW     .D2T2   B4,*+DP(delay_2$37) ; |442| 
+           STW     .D2T2   B4,*+DP(delay_1$36) ; |442| 
+	.dwpsn	file "../main_gtz.c",line 444,column 3,is_stmt,isa 0
+           MVKL    .S1     gtz_out+24,A3
+           MVKH    .S1     gtz_out+24,A3
+           STDW    .D1T1   A5:A4,*A3         ; |444| 
+	.dwpsn	file "../main_gtz.c",line 445,column 3,is_stmt,isa 0
+           MV      .L1X    B4,A3
+           STW     .D2T1   A3,*+DP(Goertzel_Value1$33) ; |445| 
+	.dwpsn	file "../main_gtz.c",line 446,column 3,is_stmt,isa 0
+           STW     .D2T1   A3,*+DP(Goertzel_Value2$32) ; |446| 
+	.dwpsn	file "../main_gtz.c",line 449,column 3,is_stmt,isa 0
 $C$DW$129	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$129, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$129, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$129, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL18:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |440| 
+$C$RL18:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |449| 
 ;** --------------------------------------------------------------------------*
-	.dwpsn	file "../main_gtz.c",line 442,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start2$29),B4 ; |442| 
+	.dwpsn	file "../main_gtz.c",line 451,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start2$29),B4 ; |451| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |442| 
-           STW     .D2T2   B4,*+DP(tdiff_final2) ; |442| 
-	.dwpsn	file "../main_gtz.c",line 443,column 3,is_stmt,isa 0
-           MVK     .L1     1,A3              ; |443| 
-           STW     .D2T1   A3,*+DP(flag)     ; |443| 
-	.dwpsn	file "../main_gtz.c",line 444,column 3,is_stmt,isa 0
-           ZERO    .L2     B4                ; |444| 
-           STW     .D2T2   B4,*+DP(N$31)     ; |444| 
+           SUB     .L2X    A4,B4,B4          ; |451| 
+           STW     .D2T2   B4,*+DP(tdiff_final2) ; |451| 
+	.dwpsn	file "../main_gtz.c",line 452,column 3,is_stmt,isa 0
+           MVK     .L2     1,B4              ; |452| 
+           STW     .D2T2   B4,*+DP(flag)     ; |452| 
+	.dwpsn	file "../main_gtz.c",line 453,column 3,is_stmt,isa 0
+           ZERO    .L2     B4                ; |453| 
+           STW     .D2T2   B4,*+DP(N$31)     ; |453| 
 ;** --------------------------------------------------------------------------*
 $C$L3:    
-	.dwpsn	file "../main_gtz.c",line 446,column 1,is_stmt,isa 0
-           LDW     .D2T2   *++SP(8),B3       ; |446| 
+	.dwpsn	file "../main_gtz.c",line 455,column 1,is_stmt,isa 0
+           LDW     .D2T2   *++SP(8),B3       ; |455| 
 	.dwcfi	cfa_offset, 16
 	.dwcfi	restore_reg, 19
            LDW     .D2T2   *++SP(8),B10
 	.dwcfi	cfa_offset, 8
 	.dwcfi	restore_reg, 26
-           LDW     .D2T2   *++SP(8),B11      ; |446| 
+           LDW     .D2T2   *++SP(8),B11      ; |455| 
 	.dwcfi	cfa_offset, 0
 	.dwcfi	restore_reg, 27
 	.dwcfi	cfa_offset, 0
@@ -1389,7 +1394,7 @@ $C$DW$130	.dwtag  DW_TAG_TI_branch
            RETNOP  .S2     B3,5
            ; BRANCH OCCURS {B3}  
 	.dwattr $C$DW$97, DW_AT_TI_end_file("../main_gtz.c")
-	.dwattr $C$DW$97, DW_AT_TI_end_line(0x1be)
+	.dwattr $C$DW$97, DW_AT_TI_end_line(0x1c7)
 	.dwattr $C$DW$97, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$97
@@ -1404,13 +1409,13 @@ $C$DW$131	.dwtag  DW_TAG_subprogram, DW_AT_name("clk_SWI_GTZ_1209_1336Hz")
 	.dwattr $C$DW$131, DW_AT_TI_symbol_name("clk_SWI_GTZ_1209_1336Hz")
 	.dwattr $C$DW$131, DW_AT_external
 	.dwattr $C$DW$131, DW_AT_TI_begin_file("../main_gtz.c")
-	.dwattr $C$DW$131, DW_AT_TI_begin_line(0x126)
+	.dwattr $C$DW$131, DW_AT_TI_begin_line(0x12b)
 	.dwattr $C$DW$131, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$131, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$131, DW_AT_decl_line(0x126)
+	.dwattr $C$DW$131, DW_AT_decl_line(0x12b)
 	.dwattr $C$DW$131, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$131, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "../main_gtz.c",line 294,column 40,is_stmt,address clk_SWI_GTZ_1209_1336Hz,isa 0
+	.dwpsn	file "../main_gtz.c",line 299,column 40,is_stmt,address clk_SWI_GTZ_1209_1336Hz,isa 0
 
 	.dwfde $C$DW$CIE, clk_SWI_GTZ_1209_1336Hz
 $C$DW$132	.dwtag  DW_TAG_variable, DW_AT_name("start2")
@@ -1465,62 +1470,62 @@ $C$DW$138	.dwtag  DW_TAG_formal_parameter, DW_AT_name("arg0")
 ;******************************************************************************
 clk_SWI_GTZ_1209_1336Hz:
 ;** --------------------------------------------------------------------------*
-;** 301	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
-;** 303	-----------------------    C$11 = &coef[0];
-;** 303	-----------------------    v$1 = (int)C$11[5]<<16|(int)(unsigned)(unsigned short)C$11[4];
-;** 303	-----------------------    coeffpair = v$1;
-;** 317	-----------------------    C$9 = delay_1;
-;** 317	-----------------------    prod1 = _dshr(_mpy2ll(C$9, v$1), 14u);
-;** 325	-----------------------    C$10 = sample;
-;** 325	-----------------------    delay = _add2(_sub2((int)(short)_hill(prod1)<<16|(int)(unsigned)(unsigned short)_loll(prod1), delay_2), (int)(short)C$10<<16|(int)(unsigned)(unsigned short)C$10);
-;** 331	-----------------------    delay_2 = C$9;
-;** 332	-----------------------    delay_1 = delay;
-;** 333	-----------------------    N = N+1;
-;** 335	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
-;** 337	-----------------------    tdiff2 = stop2-start2;
-;** 339	-----------------------    if ( N != 206 ) goto g3;
+;** 306	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
+;** 308	-----------------------    C$11 = &coef[0];
+;** 308	-----------------------    v$1 = (int)C$11[5]<<16|(int)(unsigned)(unsigned short)C$11[4];
+;** 308	-----------------------    coeffpair = v$1;
+;** 322	-----------------------    C$9 = delay_1;
+;** 322	-----------------------    prod1 = _dshr(_mpy2ll(C$9, v$1), 14u);
+;** 330	-----------------------    C$10 = sample;
+;** 330	-----------------------    delay = _add2(_sub2((int)(short)_hill(prod1)<<16|(int)(unsigned)(unsigned short)_loll(prod1), delay_2), (int)(short)C$10<<16|(int)(unsigned)(unsigned short)C$10);
+;** 336	-----------------------    delay_2 = C$9;
+;** 337	-----------------------    delay_1 = delay;
+;** 338	-----------------------    N = N+1;
+;** 340	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
+;** 342	-----------------------    tdiff2 = stop2-start2;
+;** 344	-----------------------    if ( N != 206 ) goto g3;
 	.dwcfi	cfa_offset, 0
-           STW     .D2T2   B11,*SP--(8)      ; |294| 
+           STW     .D2T2   B11,*SP--(8)      ; |299| 
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 27, 0
-           STW     .D2T2   B10,*SP--(8)      ; |294| 
+           STW     .D2T2   B10,*SP--(8)      ; |299| 
 	.dwcfi	cfa_offset, 16
 	.dwcfi	save_reg_to_mem, 26, -8
-           STW     .D2T2   B3,*SP--(8)       ; |294| 
+           STW     .D2T2   B3,*SP--(8)       ; |299| 
 	.dwcfi	cfa_offset, 24
 	.dwcfi	save_reg_to_mem, 19, 0
 $C$DW$139	.dwtag  DW_TAG_variable, DW_AT_name("$O$C1")
 	.dwattr $C$DW$139, DW_AT_TI_symbol_name("$O$C1")
 	.dwattr $C$DW$139, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$139, DW_AT_location[DW_OP_reg24]
+	.dwattr $C$DW$139, DW_AT_location[DW_OP_reg7]
 $C$DW$140	.dwtag  DW_TAG_variable, DW_AT_name("$O$C2")
 	.dwattr $C$DW$140, DW_AT_TI_symbol_name("$O$C2")
 	.dwattr $C$DW$140, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$140, DW_AT_location[DW_OP_reg5]
+	.dwattr $C$DW$140, DW_AT_location[DW_OP_reg8]
 $C$DW$141	.dwtag  DW_TAG_variable, DW_AT_name("$O$C3")
 	.dwattr $C$DW$141, DW_AT_TI_symbol_name("$O$C3")
 	.dwattr $C$DW$141, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$141, DW_AT_location[DW_OP_reg21]
+	.dwattr $C$DW$141, DW_AT_location[DW_OP_reg20]
 $C$DW$142	.dwtag  DW_TAG_variable, DW_AT_name("$O$C4")
 	.dwattr $C$DW$142, DW_AT_TI_symbol_name("$O$C4")
 	.dwattr $C$DW$142, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$142, DW_AT_location[DW_OP_reg23]
+	.dwattr $C$DW$142, DW_AT_location[DW_OP_reg6]
 $C$DW$143	.dwtag  DW_TAG_variable, DW_AT_name("$O$C5")
 	.dwattr $C$DW$143, DW_AT_TI_symbol_name("$O$C5")
 	.dwattr $C$DW$143, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$143, DW_AT_location[DW_OP_reg4]
+	.dwattr $C$DW$143, DW_AT_location[DW_OP_reg3]
 $C$DW$144	.dwtag  DW_TAG_variable, DW_AT_name("$O$C6")
 	.dwattr $C$DW$144, DW_AT_TI_symbol_name("$O$C6")
 	.dwattr $C$DW$144, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$144, DW_AT_location[DW_OP_reg22]
+	.dwattr $C$DW$144, DW_AT_location[DW_OP_reg4]
 $C$DW$145	.dwtag  DW_TAG_variable, DW_AT_name("$O$C7")
 	.dwattr $C$DW$145, DW_AT_TI_symbol_name("$O$C7")
 	.dwattr $C$DW$145, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$145, DW_AT_location[DW_OP_reg25]
+	.dwattr $C$DW$145, DW_AT_location[DW_OP_reg22]
 $C$DW$146	.dwtag  DW_TAG_variable, DW_AT_name("$O$C8")
 	.dwattr $C$DW$146, DW_AT_TI_symbol_name("$O$C8")
 	.dwattr $C$DW$146, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$146, DW_AT_location[DW_OP_reg22]
+	.dwattr $C$DW$146, DW_AT_location[DW_OP_reg21]
 $C$DW$147	.dwtag  DW_TAG_variable, DW_AT_name("$O$C9")
 	.dwattr $C$DW$147, DW_AT_TI_symbol_name("$O$C9")
 	.dwattr $C$DW$147, DW_AT_type(*$C$DW$T$10)
@@ -1556,7 +1561,7 @@ $C$DW$154	.dwtag  DW_TAG_variable, DW_AT_name("prod1")
 $C$DW$155	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$001")
 	.dwattr $C$DW$155, DW_AT_TI_symbol_name("$O$ILP$s32x2$001")
 	.dwattr $C$DW$155, DW_AT_type(*$C$DW$T$1124)
-	.dwattr $C$DW$155, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$155, DW_AT_location[DW_OP_reg6]
 $C$DW$156	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$002")
 	.dwattr $C$DW$156, DW_AT_TI_symbol_name("$O$ILP$s32x2$002")
 	.dwattr $C$DW$156, DW_AT_type(*$C$DW$T$1124)
@@ -1564,206 +1569,211 @@ $C$DW$156	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$002")
 $C$DW$157	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$003")
 	.dwattr $C$DW$157, DW_AT_TI_symbol_name("$O$ILP$s32x2$003")
 	.dwattr $C$DW$157, DW_AT_type(*$C$DW$T$1124)
-	.dwattr $C$DW$157, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$157, DW_AT_location[DW_OP_reg24]
 $C$DW$158	.dwtag  DW_TAG_variable, DW_AT_name("$O$CSE$s16x2$004")
 	.dwattr $C$DW$158, DW_AT_TI_symbol_name("$O$CSE$s16x2$004")
 	.dwattr $C$DW$158, DW_AT_type(*$C$DW$T$975)
-	.dwattr $C$DW$158, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$158, DW_AT_location[DW_OP_reg3]
 $C$DW$159	.dwtag  DW_TAG_variable, DW_AT_name("$O$CSE$s16x2$005")
 	.dwattr $C$DW$159, DW_AT_TI_symbol_name("$O$CSE$s16x2$005")
 	.dwattr $C$DW$159, DW_AT_type(*$C$DW$T$975)
 	.dwattr $C$DW$159, DW_AT_location[DW_OP_reg3]
-	.dwpsn	file "../main_gtz.c",line 301,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 306,column 2,is_stmt,isa 0
 $C$DW$160	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$160, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$160, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$160, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL19:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |301| 
+$C$RL19:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |306| 
 ;** --------------------------------------------------------------------------*
-           STW     .D2T1   A4,*+DP(start2$20) ; |301| 
-	.dwpsn	file "../main_gtz.c",line 303,column 2,is_stmt,isa 0
+           STW     .D2T1   A4,*+DP(start2$20) ; |306| 
+	.dwpsn	file "../main_gtz.c",line 308,column 2,is_stmt,isa 0
            MVKL    .S1     coef,A3
            MVKH    .S1     coef,A3
-           LDHU    .D1T1   *+A3(8),A4        ; |303| 
-           LDH     .D1T1   *+A3(10),A3       ; |303| 
+           LDHU    .D1T1   *+A3(8),A4        ; |308| 
+           LDH     .D1T1   *+A3(10),A3       ; |308| 
            NOP             4
-           PACK2   .L1     A3,A4,A3          ; |303| 
-           STW     .D2T1   A3,*+DP(coeffpair) ; |303| 
-	.dwpsn	file "../main_gtz.c",line 317,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_1$27),B5 ; |317| 
+           PACK2   .L1     A3,A4,A3          ; |308| 
+           STW     .D2T1   A3,*+DP(coeffpair) ; |308| 
+	.dwpsn	file "../main_gtz.c",line 322,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(delay_1$27),B5 ; |322| 
            NOP             4
-           MPY2    .M2X    B5,A3,B7:B6       ; |317| 
+           MPY2    .M2X    B5,A3,B7:B6       ; |322| 
            NOP             3
-           DSHR    .S2     B7:B6,14,B11:B10  ; |317| 
-	.dwpsn	file "../main_gtz.c",line 325,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(sample),B4   ; |325| 
-           LDW     .D2T2   *+DP(delay_2$28),B6 ; |325| 
-           PACK2   .L2     B11,B10,B7        ; |325| 
+           DSHR    .S2     B7:B6,14,B11:B10  ; |322| 
+	.dwpsn	file "../main_gtz.c",line 330,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(sample),B4   ; |330| 
+           LDW     .D2T2   *+DP(delay_2$28),B6 ; |330| 
+           PACK2   .L2     B11,B10,B7        ; |330| 
            NOP             3
 
-           PACK2   .L2     B4,B4,B4          ; |325| 
-||         SUB2    .S2     B7,B6,B6          ; |325| 
+           PACK2   .L2     B4,B4,B4          ; |330| 
+||         SUB2    .S2     B7,B6,B6          ; |330| 
 
-           ADD2    .L2     B6,B4,B4          ; |325| 
-	.dwpsn	file "../main_gtz.c",line 331,column 2,is_stmt,isa 0
-           STW     .D2T2   B5,*+DP(delay_2$28) ; |331| 
-	.dwpsn	file "../main_gtz.c",line 332,column 2,is_stmt,isa 0
-           STW     .D2T2   B4,*+DP(delay_1$27) ; |332| 
-	.dwpsn	file "../main_gtz.c",line 333,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$22),B4     ; |333| 
+           ADD2    .L2     B6,B4,B4          ; |330| 
+	.dwpsn	file "../main_gtz.c",line 336,column 2,is_stmt,isa 0
+           STW     .D2T2   B5,*+DP(delay_2$28) ; |336| 
+	.dwpsn	file "../main_gtz.c",line 337,column 2,is_stmt,isa 0
+           STW     .D2T2   B4,*+DP(delay_1$27) ; |337| 
+	.dwpsn	file "../main_gtz.c",line 338,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$22),B4     ; |338| 
            NOP             4
-           ADD     .L2     1,B4,B4           ; |333| 
-           STW     .D2T2   B4,*+DP(N$22)     ; |333| 
-	.dwpsn	file "../main_gtz.c",line 335,column 2,is_stmt,isa 0
+           ADD     .L2     1,B4,B4           ; |338| 
+           STW     .D2T2   B4,*+DP(N$22)     ; |338| 
+	.dwpsn	file "../main_gtz.c",line 340,column 2,is_stmt,isa 0
 $C$DW$161	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$161, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$161, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$161, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL20:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |335| 
+$C$RL20:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |340| 
 ;** --------------------------------------------------------------------------*
-	.dwpsn	file "../main_gtz.c",line 337,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start2$20),B4 ; |337| 
+	.dwpsn	file "../main_gtz.c",line 342,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start2$20),B4 ; |342| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |337| 
-           STW     .D2T2   B4,*+DP(tdiff2)   ; |337| 
-	.dwpsn	file "../main_gtz.c",line 339,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$22),B4     ; |339| 
-           MVK     .S2     206,B5            ; |339| 
+           SUB     .L2X    A4,B4,B4          ; |342| 
+           STW     .D2T2   B4,*+DP(tdiff2)   ; |342| 
+	.dwpsn	file "../main_gtz.c",line 344,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$22),B4     ; |344| 
+           MVK     .S2     206,B5            ; |344| 
            NOP             3
-           CMPEQ   .L2     B4,B5,B0          ; |339| 
-   [!B0]   BNOP    .S1     $C$L4,5           ; |339| 
-           ; BRANCHCC OCCURS {$C$L4}         ; |339| 
+           CMPEQ   .L2     B4,B5,B0          ; |344| 
+   [!B0]   BNOP    .S1     $C$L4,5           ; |344| 
+           ; BRANCHCC OCCURS {$C$L4}         ; |344| 
 ;** --------------------------------------------------------------------------*
-;** 340	-----------------------    prod1_0697_0777 = prod1;
-;** 343	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
-;** 344	-----------------------    C$8 = delay_1;
-;** 344	-----------------------    CSE$s16x2$004 = (short[2])C$8;
-;** 344	-----------------------    ILP$s32x2$001 = _mpy2ll(CSE$s16x2$004, CSE$s16x2$004);
-;** 344	-----------------------    prod1f1 = C$4 = _loll((unsigned long long)ILP$s32x2$001);
-;** 345	-----------------------    prod1f2 = C$1 = _hill((unsigned long long)ILP$s32x2$001);
-;** 346	-----------------------    C$7 = delay_2;
-;** 346	-----------------------    CSE$s16x2$005 = (short[2])C$7;
-;** 346	-----------------------    ILP$s32x2$002 = _mpy2ll(CSE$s16x2$005, CSE$s16x2$005);
-;** 346	-----------------------    prod2f1 = C$5 = _loll((unsigned long long)ILP$s32x2$002);
-;** 347	-----------------------    prod2f2 = C$2 = _hill((unsigned long long)ILP$s32x2$002);
-;** 348	-----------------------    ILP$s32x2$003 = _mpy2ll((short[2])C$8, (short[2])coeffpair);
-;** 350	-----------------------    prod3f1 = C$6 = _mpy((int)_loll((unsigned long long)ILP$s32x2$003), C$7);
-;** 351	-----------------------    prod3f2 = C$3 = _mpyhl(C$7, (int)_hill((unsigned long long)ILP$s32x2$003));
-;** 352	-----------------------    v$10 = (int)C$4+(int)C$5-C$6;
-;** 353	-----------------------    v$11 = (int)C$1+(int)C$2-C$3;
-;** 354	-----------------------    N = 0;
-;** 355	-----------------------    delay_2 = 0;
-;** 355	-----------------------    delay_1 = 0;
-;** 357	-----------------------    ((int (*)[2])gtz_out)[2] = __pack12(v$10, v$11);
-;** 358	-----------------------    Goertzel_Value1 = 0;
-;** 359	-----------------------    Goertzel_Value2 = 0;
-;** 362	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
-;** 364	-----------------------    tdiff_final2 = stop2-start2;
-;** 365	-----------------------    flag = 1;
-;** 366	-----------------------    N = 0;
+;** 345	-----------------------    prod1_0697_0777 = prod1;
+;** 348	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
+;** 349	-----------------------    C$8 = delay_1;
+;** 349	-----------------------    CSE$s16x2$004 = (short[2])C$8;
+;** 349	-----------------------    ILP$s32x2$001 = _mpy2ll(CSE$s16x2$004, CSE$s16x2$004);
+;** 349	-----------------------    prod1f1 = C$4 = _loll((unsigned long long)ILP$s32x2$001);
+;** 350	-----------------------    prod1f2 = C$1 = _hill((unsigned long long)ILP$s32x2$001);
+;** 351	-----------------------    C$7 = delay_2;
+;** 351	-----------------------    CSE$s16x2$005 = (short[2])C$7;
+;** 351	-----------------------    ILP$s32x2$002 = _mpy2ll(CSE$s16x2$005, CSE$s16x2$005);
+;** 351	-----------------------    prod2f1 = C$5 = _loll((unsigned long long)ILP$s32x2$002);
+;** 352	-----------------------    prod2f2 = C$2 = _hill((unsigned long long)ILP$s32x2$002);
+;** 353	-----------------------    ILP$s32x2$003 = _mpy2ll((short[2])C$8, (short[2])coeffpair);
+;** 357	-----------------------    prod3f1 = C$6 = _mpy((int)_dshr((long long)(int)_loll((unsigned long long)ILP$s32x2$003), 14u), C$7);
+;** 358	-----------------------    prod3f2 = C$3 = _mpyhl(C$7, (int)_dshr((long long)(int)_hill((unsigned long long)ILP$s32x2$003), 14u));
+;** 359	-----------------------    v$10 = (int)C$4+(int)C$5-C$6;
+;** 360	-----------------------    v$11 = (int)C$1+(int)C$2-C$3;
+;** 361	-----------------------    N = 0;
+;** 362	-----------------------    delay_2 = 0;
+;** 362	-----------------------    delay_1 = 0;
+;** 364	-----------------------    ((int (*)[2])gtz_out)[2] = __pack12(v$10, v$11);
+;** 365	-----------------------    Goertzel_Value1 = 0;
+;** 366	-----------------------    Goertzel_Value2 = 0;
+;** 369	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
+;** 371	-----------------------    tdiff_final2 = stop2-start2;
+;** 372	-----------------------    flag = 1;
+;** 373	-----------------------    N = 0;
 ;**	-----------------------g3:
 ;**  	-----------------------    return;
-	.dwpsn	file "../main_gtz.c",line 340,column 3,is_stmt,isa 0
-           STW     .D2T2   B10,*+DP(prod1_0697_0777) ; |340| 
-           STW     .D2T2   B11,*+DP(prod1_0697_0777+4) ; |340| 
-	.dwpsn	file "../main_gtz.c",line 343,column 3,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 345,column 3,is_stmt,isa 0
+           STW     .D2T2   B10,*+DP(prod1_0697_0777) ; |345| 
+           STW     .D2T2   B11,*+DP(prod1_0697_0777+4) ; |345| 
+	.dwpsn	file "../main_gtz.c",line 348,column 3,is_stmt,isa 0
 $C$DW$162	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$162, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$162, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$162, DW_AT_TI_call
-           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |343| 
-           ADDKPC  .S2     $C$RL21,B3,4      ; |343| 
-$C$RL21:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |343| 
+           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |348| 
+           ADDKPC  .S2     $C$RL21,B3,4      ; |348| 
+$C$RL21:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |348| 
 ;** --------------------------------------------------------------------------*
-           STW     .D2T1   A4,*+DP(start2$20) ; |343| 
-	.dwpsn	file "../main_gtz.c",line 344,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_1$27),B6 ; |344| 
+           STW     .D2T1   A4,*+DP(start2$20) ; |348| 
+	.dwpsn	file "../main_gtz.c",line 349,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(delay_1$27),B5 ; |349| 
            NOP             4
-           MV      .L2     B6,B4             ; |344| 
-           MPY2    .M2     B4,B4,B5:B4       ; |344| 
+           MV      .L1X    B5,A3             ; |349| 
+           MPY2    .M1     A3,A3,A7:A6       ; |349| 
            NOP             3
-           MV      .L2     B4,B7             ; |344| 
-           STW     .D2T2   B7,*+DP(prod1f1)  ; |344| 
-	.dwpsn	file "../main_gtz.c",line 345,column 3,is_stmt,isa 0
-           MV      .L2     B5,B8             ; |345| 
-           STW     .D2T2   B8,*+DP(prod1f2)  ; |345| 
-	.dwpsn	file "../main_gtz.c",line 346,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_2$28),B9 ; |346| 
-           NOP             4
-           MV      .L1X    B9,A3             ; |346| 
-           MPY2    .M1     A3,A3,A5:A4       ; |346| 
-           NOP             3
-           STW     .D2T1   A4,*+DP(prod2f1)  ; |346| 
-	.dwpsn	file "../main_gtz.c",line 347,column 3,is_stmt,isa 0
-           STW     .D2T1   A5,*+DP(prod2f2)  ; |347| 
-	.dwpsn	file "../main_gtz.c",line 348,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(coeffpair),B4 ; |348| 
-           NOP             4
-           MPY2    .M2     B6,B4,B5:B4       ; |348| 
-           NOP             3
+           STW     .D2T1   A6,*+DP(prod1f1)  ; |349| 
 	.dwpsn	file "../main_gtz.c",line 350,column 3,is_stmt,isa 0
-           MPY     .M2     B4,B9,B6          ; |350| 
-           NOP             1
-           STW     .D2T2   B6,*+DP(prod3f1)  ; |350| 
+           STW     .D2T1   A7,*+DP(prod1f2)  ; |350| 
 	.dwpsn	file "../main_gtz.c",line 351,column 3,is_stmt,isa 0
-           MPYHL   .M2     B9,B5,B5          ; |351| 
-           NOP             1
-           STW     .D2T2   B5,*+DP(prod3f2)  ; |351| 
+           LDW     .D2T2   *+DP(delay_2$28),B6 ; |351| 
+           NOP             4
+           MV      .L1X    B6,A3             ; |351| 
+           MPY2    .M1     A3,A3,A5:A4       ; |351| 
+           NOP             3
+           MV      .L1     A4,A3             ; |351| 
+           STW     .D2T1   A3,*+DP(prod2f1)  ; |351| 
 	.dwpsn	file "../main_gtz.c",line 352,column 3,is_stmt,isa 0
-           ADD     .L2X    A4,B7,B4          ; |352| 
-           SUB     .L2     B4,B6,B6          ; |352| 
+           MV      .L1     A5,A8             ; |352| 
+           STW     .D2T1   A8,*+DP(prod2f2)  ; |352| 
 	.dwpsn	file "../main_gtz.c",line 353,column 3,is_stmt,isa 0
-           ADD     .L1X    A5,B8,A3          ; |353| 
-           NOP             1
-           SUB     .L2X    A3,B5,B7          ; |353| Define a twin register
-	.dwpsn	file "../main_gtz.c",line 354,column 3,is_stmt,isa 0
-           ZERO    .L2     B4                ; |354| 
-           STW     .D2T2   B4,*+DP(N$22)     ; |354| 
-	.dwpsn	file "../main_gtz.c",line 355,column 3,is_stmt,isa 0
-
-           MV      .L1X    B4,A3             ; |355| 
-||         STW     .D2T2   B4,*+DP(delay_1$27) ; |355| 
-
-           STW     .D2T1   A3,*+DP(delay_2$28) ; |355| 
+           LDW     .D2T2   *+DP(coeffpair),B4 ; |353| 
+           NOP             4
+           MPY2    .M2     B5,B4,B9:B8       ; |353| 
+           NOP             4
 	.dwpsn	file "../main_gtz.c",line 357,column 3,is_stmt,isa 0
-           MVKL    .S2     gtz_out+16,B4
-           MVKH    .S2     gtz_out+16,B4
-           STDW    .D2T2   B7:B6,*B4         ; |357| 
+           SHR     .S1X    B8,31,A5          ; |357| 
+           MV      .L1X    B8,A4             ; |357| 
+           DSHR    .S1     A5:A4,14,A5:A4    ; |357| 
+           MPY     .M1X    A4,B6,A4          ; |357| 
+           NOP             1
+           STW     .D2T1   A4,*+DP(prod3f1)  ; |357| 
 	.dwpsn	file "../main_gtz.c",line 358,column 3,is_stmt,isa 0
-           STW     .D2T1   A3,*+DP(Goertzel_Value1$24) ; |358| 
+
+           SHR     .S2     B9,31,B5          ; |358| 
+||         MV      .L2     B9,B4             ; |358| 
+
+           DSHR    .S2     B5:B4,14,B5:B4    ; |358| 
+           MPYHL   .M2     B6,B4,B4          ; |358| 
+           NOP             1
+           STW     .D2T2   B4,*+DP(prod3f2)  ; |358| 
 	.dwpsn	file "../main_gtz.c",line 359,column 3,is_stmt,isa 0
-           STW     .D2T1   A3,*+DP(Goertzel_Value2$23) ; |359| 
+           ADD     .L1     A3,A6,A3          ; |359| 
+           SUB     .L1     A3,A4,A4          ; |359| 
+	.dwpsn	file "../main_gtz.c",line 360,column 3,is_stmt,isa 0
+           ADD     .L1     A8,A7,A3          ; |360| 
+           SUB     .L1X    A3,B4,A5          ; |360| 
+	.dwpsn	file "../main_gtz.c",line 361,column 3,is_stmt,isa 0
+           ZERO    .L2     B4                ; |361| 
+           STW     .D2T2   B4,*+DP(N$22)     ; |361| 
 	.dwpsn	file "../main_gtz.c",line 362,column 3,is_stmt,isa 0
+           STW     .D2T2   B4,*+DP(delay_2$28) ; |362| 
+           STW     .D2T2   B4,*+DP(delay_1$27) ; |362| 
+	.dwpsn	file "../main_gtz.c",line 364,column 3,is_stmt,isa 0
+           MVKL    .S1     gtz_out+16,A3
+           MVKH    .S1     gtz_out+16,A3
+           STDW    .D1T1   A5:A4,*A3         ; |364| 
+	.dwpsn	file "../main_gtz.c",line 365,column 3,is_stmt,isa 0
+           MV      .L1X    B4,A3
+           STW     .D2T1   A3,*+DP(Goertzel_Value1$24) ; |365| 
+	.dwpsn	file "../main_gtz.c",line 366,column 3,is_stmt,isa 0
+           STW     .D2T1   A3,*+DP(Goertzel_Value2$23) ; |366| 
+	.dwpsn	file "../main_gtz.c",line 369,column 3,is_stmt,isa 0
 $C$DW$163	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$163, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$163, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$163, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL22:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |362| 
+$C$RL22:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |369| 
 ;** --------------------------------------------------------------------------*
-	.dwpsn	file "../main_gtz.c",line 364,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start2$20),B4 ; |364| 
+	.dwpsn	file "../main_gtz.c",line 371,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start2$20),B4 ; |371| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |364| 
-           STW     .D2T2   B4,*+DP(tdiff_final2) ; |364| 
-	.dwpsn	file "../main_gtz.c",line 365,column 3,is_stmt,isa 0
-           MVK     .L1     1,A3              ; |365| 
-           STW     .D2T1   A3,*+DP(flag)     ; |365| 
-	.dwpsn	file "../main_gtz.c",line 366,column 3,is_stmt,isa 0
-           ZERO    .L2     B4                ; |366| 
-           STW     .D2T2   B4,*+DP(N$22)     ; |366| 
+           SUB     .L2X    A4,B4,B4          ; |371| 
+           STW     .D2T2   B4,*+DP(tdiff_final2) ; |371| 
+	.dwpsn	file "../main_gtz.c",line 372,column 3,is_stmt,isa 0
+           MVK     .L2     1,B4              ; |372| 
+           STW     .D2T2   B4,*+DP(flag)     ; |372| 
+	.dwpsn	file "../main_gtz.c",line 373,column 3,is_stmt,isa 0
+           ZERO    .L2     B4                ; |373| 
+           STW     .D2T2   B4,*+DP(N$22)     ; |373| 
 ;** --------------------------------------------------------------------------*
 $C$L4:    
-	.dwpsn	file "../main_gtz.c",line 369,column 1,is_stmt,isa 0
-           LDW     .D2T2   *++SP(8),B3       ; |369| 
+	.dwpsn	file "../main_gtz.c",line 376,column 1,is_stmt,isa 0
+           LDW     .D2T2   *++SP(8),B3       ; |376| 
 	.dwcfi	cfa_offset, 16
 	.dwcfi	restore_reg, 19
            LDW     .D2T2   *++SP(8),B10
 	.dwcfi	cfa_offset, 8
 	.dwcfi	restore_reg, 26
-           LDW     .D2T2   *++SP(8),B11      ; |369| 
+           LDW     .D2T2   *++SP(8),B11      ; |376| 
 	.dwcfi	cfa_offset, 0
 	.dwcfi	restore_reg, 27
 	.dwcfi	cfa_offset, 0
@@ -1774,7 +1784,7 @@ $C$DW$164	.dwtag  DW_TAG_TI_branch
            RETNOP  .S2     B3,5
            ; BRANCH OCCURS {B3}  
 	.dwattr $C$DW$131, DW_AT_TI_end_file("../main_gtz.c")
-	.dwattr $C$DW$131, DW_AT_TI_end_line(0x171)
+	.dwattr $C$DW$131, DW_AT_TI_end_line(0x178)
 	.dwattr $C$DW$131, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$131
@@ -1789,13 +1799,13 @@ $C$DW$165	.dwtag  DW_TAG_subprogram, DW_AT_name("clk_SWI_GTZ_0852_941Hz")
 	.dwattr $C$DW$165, DW_AT_TI_symbol_name("clk_SWI_GTZ_0852_941Hz")
 	.dwattr $C$DW$165, DW_AT_external
 	.dwattr $C$DW$165, DW_AT_TI_begin_file("../main_gtz.c")
-	.dwattr $C$DW$165, DW_AT_TI_begin_line(0xd8)
+	.dwattr $C$DW$165, DW_AT_TI_begin_line(0xdb)
 	.dwattr $C$DW$165, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$165, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$165, DW_AT_decl_line(0xd8)
+	.dwattr $C$DW$165, DW_AT_decl_line(0xdb)
 	.dwattr $C$DW$165, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$165, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "../main_gtz.c",line 216,column 39,is_stmt,address clk_SWI_GTZ_0852_941Hz,isa 0
+	.dwpsn	file "../main_gtz.c",line 219,column 39,is_stmt,address clk_SWI_GTZ_0852_941Hz,isa 0
 
 	.dwfde $C$DW$CIE, clk_SWI_GTZ_0852_941Hz
 $C$DW$166	.dwtag  DW_TAG_variable, DW_AT_name("start2")
@@ -1850,62 +1860,62 @@ $C$DW$172	.dwtag  DW_TAG_formal_parameter, DW_AT_name("arg0")
 ;******************************************************************************
 clk_SWI_GTZ_0852_941Hz:
 ;** --------------------------------------------------------------------------*
-;** 223	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
-;** 225	-----------------------    C$11 = &coef[0];
-;** 225	-----------------------    v$1 = (int)C$11[3]<<16|(int)(unsigned)(unsigned short)C$11[2];
-;** 225	-----------------------    coeffpair = v$1;
-;** 239	-----------------------    C$9 = delay_1;
-;** 239	-----------------------    prod1 = _dshr(_mpy2ll(C$9, v$1), 14u);
-;** 247	-----------------------    C$10 = sample;
-;** 247	-----------------------    delay = _add2(_sub2((int)(short)_hill(prod1)<<16|(int)(unsigned)(unsigned short)_loll(prod1), delay_2), (int)(short)C$10<<16|(int)(unsigned)(unsigned short)C$10);
-;** 253	-----------------------    delay_2 = C$9;
-;** 254	-----------------------    delay_1 = delay;
-;** 255	-----------------------    N = N+1;
-;** 257	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
-;** 259	-----------------------    tdiff2 = stop2-start2;
-;** 261	-----------------------    if ( N != 206 ) goto g3;
+;** 226	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
+;** 228	-----------------------    C$11 = &coef[0];
+;** 228	-----------------------    v$1 = (int)C$11[3]<<16|(int)(unsigned)(unsigned short)C$11[2];
+;** 228	-----------------------    coeffpair = v$1;
+;** 242	-----------------------    C$9 = delay_1;
+;** 242	-----------------------    prod1 = _dshr(_mpy2ll(C$9, v$1), 14u);
+;** 250	-----------------------    C$10 = sample;
+;** 250	-----------------------    delay = _add2(_sub2((int)(short)_hill(prod1)<<16|(int)(unsigned)(unsigned short)_loll(prod1), delay_2), (int)(short)C$10<<16|(int)(unsigned)(unsigned short)C$10);
+;** 256	-----------------------    delay_2 = C$9;
+;** 257	-----------------------    delay_1 = delay;
+;** 258	-----------------------    N = N+1;
+;** 260	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
+;** 262	-----------------------    tdiff2 = stop2-start2;
+;** 264	-----------------------    if ( N != 206 ) goto g3;
 	.dwcfi	cfa_offset, 0
-           STW     .D2T2   B11,*SP--(8)      ; |216| 
+           STW     .D2T2   B11,*SP--(8)      ; |219| 
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 27, 0
-           STW     .D2T2   B10,*SP--(8)      ; |216| 
+           STW     .D2T2   B10,*SP--(8)      ; |219| 
 	.dwcfi	cfa_offset, 16
 	.dwcfi	save_reg_to_mem, 26, -8
-           STW     .D2T2   B3,*SP--(8)       ; |216| 
+           STW     .D2T2   B3,*SP--(8)       ; |219| 
 	.dwcfi	cfa_offset, 24
 	.dwcfi	save_reg_to_mem, 19, 0
 $C$DW$173	.dwtag  DW_TAG_variable, DW_AT_name("$O$C1")
 	.dwattr $C$DW$173, DW_AT_TI_symbol_name("$O$C1")
 	.dwattr $C$DW$173, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$173, DW_AT_location[DW_OP_reg24]
+	.dwattr $C$DW$173, DW_AT_location[DW_OP_reg7]
 $C$DW$174	.dwtag  DW_TAG_variable, DW_AT_name("$O$C2")
 	.dwattr $C$DW$174, DW_AT_TI_symbol_name("$O$C2")
 	.dwattr $C$DW$174, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$174, DW_AT_location[DW_OP_reg5]
+	.dwattr $C$DW$174, DW_AT_location[DW_OP_reg8]
 $C$DW$175	.dwtag  DW_TAG_variable, DW_AT_name("$O$C3")
 	.dwattr $C$DW$175, DW_AT_TI_symbol_name("$O$C3")
 	.dwattr $C$DW$175, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$175, DW_AT_location[DW_OP_reg21]
+	.dwattr $C$DW$175, DW_AT_location[DW_OP_reg20]
 $C$DW$176	.dwtag  DW_TAG_variable, DW_AT_name("$O$C4")
 	.dwattr $C$DW$176, DW_AT_TI_symbol_name("$O$C4")
 	.dwattr $C$DW$176, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$176, DW_AT_location[DW_OP_reg23]
+	.dwattr $C$DW$176, DW_AT_location[DW_OP_reg6]
 $C$DW$177	.dwtag  DW_TAG_variable, DW_AT_name("$O$C5")
 	.dwattr $C$DW$177, DW_AT_TI_symbol_name("$O$C5")
 	.dwattr $C$DW$177, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$177, DW_AT_location[DW_OP_reg4]
+	.dwattr $C$DW$177, DW_AT_location[DW_OP_reg3]
 $C$DW$178	.dwtag  DW_TAG_variable, DW_AT_name("$O$C6")
 	.dwattr $C$DW$178, DW_AT_TI_symbol_name("$O$C6")
 	.dwattr $C$DW$178, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$178, DW_AT_location[DW_OP_reg22]
+	.dwattr $C$DW$178, DW_AT_location[DW_OP_reg4]
 $C$DW$179	.dwtag  DW_TAG_variable, DW_AT_name("$O$C7")
 	.dwattr $C$DW$179, DW_AT_TI_symbol_name("$O$C7")
 	.dwattr $C$DW$179, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$179, DW_AT_location[DW_OP_reg25]
+	.dwattr $C$DW$179, DW_AT_location[DW_OP_reg22]
 $C$DW$180	.dwtag  DW_TAG_variable, DW_AT_name("$O$C8")
 	.dwattr $C$DW$180, DW_AT_TI_symbol_name("$O$C8")
 	.dwattr $C$DW$180, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$180, DW_AT_location[DW_OP_reg22]
+	.dwattr $C$DW$180, DW_AT_location[DW_OP_reg21]
 $C$DW$181	.dwtag  DW_TAG_variable, DW_AT_name("$O$C9")
 	.dwattr $C$DW$181, DW_AT_TI_symbol_name("$O$C9")
 	.dwattr $C$DW$181, DW_AT_type(*$C$DW$T$10)
@@ -1941,7 +1951,7 @@ $C$DW$188	.dwtag  DW_TAG_variable, DW_AT_name("prod1")
 $C$DW$189	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$001")
 	.dwattr $C$DW$189, DW_AT_TI_symbol_name("$O$ILP$s32x2$001")
 	.dwattr $C$DW$189, DW_AT_type(*$C$DW$T$1124)
-	.dwattr $C$DW$189, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$189, DW_AT_location[DW_OP_reg6]
 $C$DW$190	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$002")
 	.dwattr $C$DW$190, DW_AT_TI_symbol_name("$O$ILP$s32x2$002")
 	.dwattr $C$DW$190, DW_AT_type(*$C$DW$T$1124)
@@ -1949,206 +1959,211 @@ $C$DW$190	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$002")
 $C$DW$191	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$003")
 	.dwattr $C$DW$191, DW_AT_TI_symbol_name("$O$ILP$s32x2$003")
 	.dwattr $C$DW$191, DW_AT_type(*$C$DW$T$1124)
-	.dwattr $C$DW$191, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$191, DW_AT_location[DW_OP_reg24]
 $C$DW$192	.dwtag  DW_TAG_variable, DW_AT_name("$O$CSE$s16x2$004")
 	.dwattr $C$DW$192, DW_AT_TI_symbol_name("$O$CSE$s16x2$004")
 	.dwattr $C$DW$192, DW_AT_type(*$C$DW$T$975)
-	.dwattr $C$DW$192, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$192, DW_AT_location[DW_OP_reg3]
 $C$DW$193	.dwtag  DW_TAG_variable, DW_AT_name("$O$CSE$s16x2$005")
 	.dwattr $C$DW$193, DW_AT_TI_symbol_name("$O$CSE$s16x2$005")
 	.dwattr $C$DW$193, DW_AT_type(*$C$DW$T$975)
 	.dwattr $C$DW$193, DW_AT_location[DW_OP_reg3]
-	.dwpsn	file "../main_gtz.c",line 223,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 226,column 2,is_stmt,isa 0
 $C$DW$194	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$194, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$194, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$194, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL23:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |223| 
+$C$RL23:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |226| 
 ;** --------------------------------------------------------------------------*
-           STW     .D2T1   A4,*+DP(start2$11) ; |223| 
-	.dwpsn	file "../main_gtz.c",line 225,column 2,is_stmt,isa 0
+           STW     .D2T1   A4,*+DP(start2$11) ; |226| 
+	.dwpsn	file "../main_gtz.c",line 228,column 2,is_stmt,isa 0
            MVKL    .S1     coef,A3
            MVKH    .S1     coef,A3
-           LDHU    .D1T1   *+A3(4),A4        ; |225| 
-           LDH     .D1T1   *+A3(6),A3        ; |225| 
+           LDHU    .D1T1   *+A3(4),A4        ; |228| 
+           LDH     .D1T1   *+A3(6),A3        ; |228| 
            NOP             4
-           PACK2   .L1     A3,A4,A3          ; |225| 
-           STW     .D2T1   A3,*+DP(coeffpair) ; |225| 
-	.dwpsn	file "../main_gtz.c",line 239,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_1$18),B5 ; |239| 
+           PACK2   .L1     A3,A4,A3          ; |228| 
+           STW     .D2T1   A3,*+DP(coeffpair) ; |228| 
+	.dwpsn	file "../main_gtz.c",line 242,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(delay_1$18),B5 ; |242| 
            NOP             4
-           MPY2    .M2X    B5,A3,B7:B6       ; |239| 
+           MPY2    .M2X    B5,A3,B7:B6       ; |242| 
            NOP             3
-           DSHR    .S2     B7:B6,14,B11:B10  ; |239| 
-	.dwpsn	file "../main_gtz.c",line 247,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(sample),B4   ; |247| 
-           LDW     .D2T2   *+DP(delay_2$19),B6 ; |247| 
-           PACK2   .L2     B11,B10,B7        ; |247| 
+           DSHR    .S2     B7:B6,14,B11:B10  ; |242| 
+	.dwpsn	file "../main_gtz.c",line 250,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(sample),B4   ; |250| 
+           LDW     .D2T2   *+DP(delay_2$19),B6 ; |250| 
+           PACK2   .L2     B11,B10,B7        ; |250| 
            NOP             3
 
-           PACK2   .L2     B4,B4,B4          ; |247| 
-||         SUB2    .S2     B7,B6,B6          ; |247| 
+           PACK2   .L2     B4,B4,B4          ; |250| 
+||         SUB2    .S2     B7,B6,B6          ; |250| 
 
-           ADD2    .L2     B6,B4,B4          ; |247| 
-	.dwpsn	file "../main_gtz.c",line 253,column 2,is_stmt,isa 0
-           STW     .D2T2   B5,*+DP(delay_2$19) ; |253| 
-	.dwpsn	file "../main_gtz.c",line 254,column 2,is_stmt,isa 0
-           STW     .D2T2   B4,*+DP(delay_1$18) ; |254| 
-	.dwpsn	file "../main_gtz.c",line 255,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$13),B4     ; |255| 
-           NOP             4
-           ADD     .L2     1,B4,B4           ; |255| 
-           STW     .D2T2   B4,*+DP(N$13)     ; |255| 
+           ADD2    .L2     B6,B4,B4          ; |250| 
+	.dwpsn	file "../main_gtz.c",line 256,column 2,is_stmt,isa 0
+           STW     .D2T2   B5,*+DP(delay_2$19) ; |256| 
 	.dwpsn	file "../main_gtz.c",line 257,column 2,is_stmt,isa 0
+           STW     .D2T2   B4,*+DP(delay_1$18) ; |257| 
+	.dwpsn	file "../main_gtz.c",line 258,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$13),B4     ; |258| 
+           NOP             4
+           ADD     .L2     1,B4,B4           ; |258| 
+           STW     .D2T2   B4,*+DP(N$13)     ; |258| 
+	.dwpsn	file "../main_gtz.c",line 260,column 2,is_stmt,isa 0
 $C$DW$195	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$195, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$195, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$195, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL24:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |257| 
+$C$RL24:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |260| 
 ;** --------------------------------------------------------------------------*
-	.dwpsn	file "../main_gtz.c",line 259,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start2$11),B4 ; |259| 
+	.dwpsn	file "../main_gtz.c",line 262,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start2$11),B4 ; |262| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |259| 
-           STW     .D2T2   B4,*+DP(tdiff2)   ; |259| 
-	.dwpsn	file "../main_gtz.c",line 261,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$13),B4     ; |261| 
-           MVK     .S2     206,B5            ; |261| 
+           SUB     .L2X    A4,B4,B4          ; |262| 
+           STW     .D2T2   B4,*+DP(tdiff2)   ; |262| 
+	.dwpsn	file "../main_gtz.c",line 264,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$13),B4     ; |264| 
+           MVK     .S2     206,B5            ; |264| 
            NOP             3
-           CMPEQ   .L2     B4,B5,B0          ; |261| 
-   [!B0]   BNOP    .S1     $C$L5,5           ; |261| 
-           ; BRANCHCC OCCURS {$C$L5}         ; |261| 
+           CMPEQ   .L2     B4,B5,B0          ; |264| 
+   [!B0]   BNOP    .S1     $C$L5,5           ; |264| 
+           ; BRANCHCC OCCURS {$C$L5}         ; |264| 
 ;** --------------------------------------------------------------------------*
-;** 262	-----------------------    prod1_0697_0777 = prod1;
-;** 265	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
-;** 266	-----------------------    C$8 = delay_1;
-;** 266	-----------------------    CSE$s16x2$004 = (short[2])C$8;
-;** 266	-----------------------    ILP$s32x2$001 = _mpy2ll(CSE$s16x2$004, CSE$s16x2$004);
-;** 266	-----------------------    prod1f1 = C$4 = _loll((unsigned long long)ILP$s32x2$001);
-;** 267	-----------------------    prod1f2 = C$1 = _hill((unsigned long long)ILP$s32x2$001);
-;** 268	-----------------------    C$7 = delay_2;
-;** 268	-----------------------    CSE$s16x2$005 = (short[2])C$7;
-;** 268	-----------------------    ILP$s32x2$002 = _mpy2ll(CSE$s16x2$005, CSE$s16x2$005);
-;** 268	-----------------------    prod2f1 = C$5 = _loll((unsigned long long)ILP$s32x2$002);
-;** 269	-----------------------    prod2f2 = C$2 = _hill((unsigned long long)ILP$s32x2$002);
-;** 270	-----------------------    ILP$s32x2$003 = _mpy2ll((short[2])C$8, (short[2])coeffpair);
-;** 272	-----------------------    prod3f1 = C$6 = _mpy((int)_loll((unsigned long long)ILP$s32x2$003), C$7);
-;** 273	-----------------------    prod3f2 = C$3 = _mpyhl(C$7, (int)_hill((unsigned long long)ILP$s32x2$003));
-;** 274	-----------------------    v$10 = (int)C$4+(int)C$5-C$6;
-;** 275	-----------------------    v$11 = (int)C$1+(int)C$2-C$3;
-;** 276	-----------------------    N = 0;
-;** 277	-----------------------    delay_2 = 0;
-;** 277	-----------------------    delay_1 = 0;
-;** 279	-----------------------    ((int (*)[2])gtz_out)[1] = __pack12(v$10, v$11);
-;** 280	-----------------------    Goertzel_Value1 = 0;
-;** 281	-----------------------    Goertzel_Value2 = 0;
-;** 284	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
-;** 286	-----------------------    tdiff_final2 = stop2-start2;
-;** 287	-----------------------    flag = 1;
-;** 288	-----------------------    N = 0;
+;** 265	-----------------------    prod1_0697_0777 = prod1;
+;** 268	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
+;** 269	-----------------------    C$8 = delay_1;
+;** 269	-----------------------    CSE$s16x2$004 = (short[2])C$8;
+;** 269	-----------------------    ILP$s32x2$001 = _mpy2ll(CSE$s16x2$004, CSE$s16x2$004);
+;** 269	-----------------------    prod1f1 = C$4 = _loll((unsigned long long)ILP$s32x2$001);
+;** 270	-----------------------    prod1f2 = C$1 = _hill((unsigned long long)ILP$s32x2$001);
+;** 271	-----------------------    C$7 = delay_2;
+;** 271	-----------------------    CSE$s16x2$005 = (short[2])C$7;
+;** 271	-----------------------    ILP$s32x2$002 = _mpy2ll(CSE$s16x2$005, CSE$s16x2$005);
+;** 271	-----------------------    prod2f1 = C$5 = _loll((unsigned long long)ILP$s32x2$002);
+;** 272	-----------------------    prod2f2 = C$2 = _hill((unsigned long long)ILP$s32x2$002);
+;** 273	-----------------------    ILP$s32x2$003 = _mpy2ll((short[2])C$8, (short[2])coeffpair);
+;** 277	-----------------------    prod3f1 = C$6 = _mpy((int)_dshr((long long)(int)_loll((unsigned long long)ILP$s32x2$003), 14u), C$7);
+;** 278	-----------------------    prod3f2 = C$3 = _mpyhl(C$7, (int)_dshr((long long)(int)_hill((unsigned long long)ILP$s32x2$003), 14u));
+;** 279	-----------------------    v$10 = (int)C$4+(int)C$5-C$6;
+;** 280	-----------------------    v$11 = (int)C$1+(int)C$2-C$3;
+;** 281	-----------------------    N = 0;
+;** 282	-----------------------    delay_2 = 0;
+;** 282	-----------------------    delay_1 = 0;
+;** 284	-----------------------    ((int (*)[2])gtz_out)[1] = __pack12(v$10, v$11);
+;** 285	-----------------------    Goertzel_Value1 = 0;
+;** 286	-----------------------    Goertzel_Value2 = 0;
+;** 289	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
+;** 291	-----------------------    tdiff_final2 = stop2-start2;
+;** 292	-----------------------    flag = 1;
+;** 293	-----------------------    N = 0;
 ;**	-----------------------g3:
 ;**  	-----------------------    return;
-	.dwpsn	file "../main_gtz.c",line 262,column 3,is_stmt,isa 0
-           STW     .D2T2   B10,*+DP(prod1_0697_0777) ; |262| 
-           STW     .D2T2   B11,*+DP(prod1_0697_0777+4) ; |262| 
 	.dwpsn	file "../main_gtz.c",line 265,column 3,is_stmt,isa 0
+           STW     .D2T2   B10,*+DP(prod1_0697_0777) ; |265| 
+           STW     .D2T2   B11,*+DP(prod1_0697_0777+4) ; |265| 
+	.dwpsn	file "../main_gtz.c",line 268,column 3,is_stmt,isa 0
 $C$DW$196	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$196, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$196, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$196, DW_AT_TI_call
-           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |265| 
-           ADDKPC  .S2     $C$RL25,B3,4      ; |265| 
-$C$RL25:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |265| 
+           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |268| 
+           ADDKPC  .S2     $C$RL25,B3,4      ; |268| 
+$C$RL25:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |268| 
 ;** --------------------------------------------------------------------------*
-           STW     .D2T1   A4,*+DP(start2$11) ; |265| 
-	.dwpsn	file "../main_gtz.c",line 266,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_1$18),B6 ; |266| 
-           NOP             4
-           MV      .L2     B6,B4             ; |266| 
-           MPY2    .M2     B4,B4,B5:B4       ; |266| 
-           NOP             3
-           MV      .L2     B4,B7             ; |266| 
-           STW     .D2T2   B7,*+DP(prod1f1)  ; |266| 
-	.dwpsn	file "../main_gtz.c",line 267,column 3,is_stmt,isa 0
-           MV      .L2     B5,B8             ; |267| 
-           STW     .D2T2   B8,*+DP(prod1f2)  ; |267| 
-	.dwpsn	file "../main_gtz.c",line 268,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_2$19),B9 ; |268| 
-           NOP             4
-           MV      .L1X    B9,A3             ; |268| 
-           MPY2    .M1     A3,A3,A5:A4       ; |268| 
-           NOP             3
-           STW     .D2T1   A4,*+DP(prod2f1)  ; |268| 
+           STW     .D2T1   A4,*+DP(start2$11) ; |268| 
 	.dwpsn	file "../main_gtz.c",line 269,column 3,is_stmt,isa 0
-           STW     .D2T1   A5,*+DP(prod2f2)  ; |269| 
-	.dwpsn	file "../main_gtz.c",line 270,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(coeffpair),B4 ; |270| 
+           LDW     .D2T2   *+DP(delay_1$18),B5 ; |269| 
            NOP             4
-           MPY2    .M2     B6,B4,B5:B4       ; |270| 
+           MV      .L1X    B5,A3             ; |269| 
+           MPY2    .M1     A3,A3,A7:A6       ; |269| 
            NOP             3
+           STW     .D2T1   A6,*+DP(prod1f1)  ; |269| 
+	.dwpsn	file "../main_gtz.c",line 270,column 3,is_stmt,isa 0
+           STW     .D2T1   A7,*+DP(prod1f2)  ; |270| 
+	.dwpsn	file "../main_gtz.c",line 271,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(delay_2$19),B6 ; |271| 
+           NOP             4
+           MV      .L1X    B6,A3             ; |271| 
+           MPY2    .M1     A3,A3,A5:A4       ; |271| 
+           NOP             3
+           MV      .L1     A4,A3             ; |271| 
+           STW     .D2T1   A3,*+DP(prod2f1)  ; |271| 
 	.dwpsn	file "../main_gtz.c",line 272,column 3,is_stmt,isa 0
-           MPY     .M2     B4,B9,B6          ; |272| 
-           NOP             1
-           STW     .D2T2   B6,*+DP(prod3f1)  ; |272| 
+           MV      .L1     A5,A8             ; |272| 
+           STW     .D2T1   A8,*+DP(prod2f2)  ; |272| 
 	.dwpsn	file "../main_gtz.c",line 273,column 3,is_stmt,isa 0
-           MPYHL   .M2     B9,B5,B5          ; |273| 
-           NOP             1
-           STW     .D2T2   B5,*+DP(prod3f2)  ; |273| 
-	.dwpsn	file "../main_gtz.c",line 274,column 3,is_stmt,isa 0
-           ADD     .L2X    A4,B7,B4          ; |274| 
-           SUB     .L2     B4,B6,B6          ; |274| 
-	.dwpsn	file "../main_gtz.c",line 275,column 3,is_stmt,isa 0
-           ADD     .L1X    A5,B8,A3          ; |275| 
-           NOP             1
-           SUB     .L2X    A3,B5,B7          ; |275| Define a twin register
-	.dwpsn	file "../main_gtz.c",line 276,column 3,is_stmt,isa 0
-           ZERO    .L2     B4                ; |276| 
-           STW     .D2T2   B4,*+DP(N$13)     ; |276| 
+           LDW     .D2T2   *+DP(coeffpair),B4 ; |273| 
+           NOP             4
+           MPY2    .M2     B5,B4,B9:B8       ; |273| 
+           NOP             4
 	.dwpsn	file "../main_gtz.c",line 277,column 3,is_stmt,isa 0
+           SHR     .S1X    B8,31,A5          ; |277| 
+           MV      .L1X    B8,A4             ; |277| 
+           DSHR    .S1     A5:A4,14,A5:A4    ; |277| 
+           MPY     .M1X    A4,B6,A4          ; |277| 
+           NOP             1
+           STW     .D2T1   A4,*+DP(prod3f1)  ; |277| 
+	.dwpsn	file "../main_gtz.c",line 278,column 3,is_stmt,isa 0
 
-           MV      .L1X    B4,A3             ; |277| 
-||         STW     .D2T2   B4,*+DP(delay_1$18) ; |277| 
+           SHR     .S2     B9,31,B5          ; |278| 
+||         MV      .L2     B9,B4             ; |278| 
 
-           STW     .D2T1   A3,*+DP(delay_2$19) ; |277| 
+           DSHR    .S2     B5:B4,14,B5:B4    ; |278| 
+           MPYHL   .M2     B6,B4,B4          ; |278| 
+           NOP             1
+           STW     .D2T2   B4,*+DP(prod3f2)  ; |278| 
 	.dwpsn	file "../main_gtz.c",line 279,column 3,is_stmt,isa 0
-           MVKL    .S2     gtz_out+8,B4
-           MVKH    .S2     gtz_out+8,B4
-           STDW    .D2T2   B7:B6,*B4         ; |279| 
+           ADD     .L1     A3,A6,A3          ; |279| 
+           SUB     .L1     A3,A4,A4          ; |279| 
 	.dwpsn	file "../main_gtz.c",line 280,column 3,is_stmt,isa 0
-           STW     .D2T1   A3,*+DP(Goertzel_Value1$15) ; |280| 
+           ADD     .L1     A8,A7,A3          ; |280| 
+           SUB     .L1X    A3,B4,A5          ; |280| 
 	.dwpsn	file "../main_gtz.c",line 281,column 3,is_stmt,isa 0
-           STW     .D2T1   A3,*+DP(Goertzel_Value2$14) ; |281| 
+           ZERO    .L2     B4                ; |281| 
+           STW     .D2T2   B4,*+DP(N$13)     ; |281| 
+	.dwpsn	file "../main_gtz.c",line 282,column 3,is_stmt,isa 0
+           STW     .D2T2   B4,*+DP(delay_2$19) ; |282| 
+           STW     .D2T2   B4,*+DP(delay_1$18) ; |282| 
 	.dwpsn	file "../main_gtz.c",line 284,column 3,is_stmt,isa 0
+           MVKL    .S1     gtz_out+8,A3
+           MVKH    .S1     gtz_out+8,A3
+           STDW    .D1T1   A5:A4,*A3         ; |284| 
+	.dwpsn	file "../main_gtz.c",line 285,column 3,is_stmt,isa 0
+           MV      .L1X    B4,A3
+           STW     .D2T1   A3,*+DP(Goertzel_Value1$15) ; |285| 
+	.dwpsn	file "../main_gtz.c",line 286,column 3,is_stmt,isa 0
+           STW     .D2T1   A3,*+DP(Goertzel_Value2$14) ; |286| 
+	.dwpsn	file "../main_gtz.c",line 289,column 3,is_stmt,isa 0
 $C$DW$197	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$197, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$197, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$197, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL26:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |284| 
+$C$RL26:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |289| 
 ;** --------------------------------------------------------------------------*
-	.dwpsn	file "../main_gtz.c",line 286,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start2$11),B4 ; |286| 
+	.dwpsn	file "../main_gtz.c",line 291,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start2$11),B4 ; |291| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |286| 
-           STW     .D2T2   B4,*+DP(tdiff_final2) ; |286| 
-	.dwpsn	file "../main_gtz.c",line 287,column 3,is_stmt,isa 0
-           MVK     .L1     1,A3              ; |287| 
-           STW     .D2T1   A3,*+DP(flag)     ; |287| 
-	.dwpsn	file "../main_gtz.c",line 288,column 3,is_stmt,isa 0
-           ZERO    .L2     B4                ; |288| 
-           STW     .D2T2   B4,*+DP(N$13)     ; |288| 
+           SUB     .L2X    A4,B4,B4          ; |291| 
+           STW     .D2T2   B4,*+DP(tdiff_final2) ; |291| 
+	.dwpsn	file "../main_gtz.c",line 292,column 3,is_stmt,isa 0
+           MVK     .L2     1,B4              ; |292| 
+           STW     .D2T2   B4,*+DP(flag)     ; |292| 
+	.dwpsn	file "../main_gtz.c",line 293,column 3,is_stmt,isa 0
+           ZERO    .L2     B4                ; |293| 
+           STW     .D2T2   B4,*+DP(N$13)     ; |293| 
 ;** --------------------------------------------------------------------------*
 $C$L5:    
-	.dwpsn	file "../main_gtz.c",line 292,column 1,is_stmt,isa 0
-           LDW     .D2T2   *++SP(8),B3       ; |292| 
+	.dwpsn	file "../main_gtz.c",line 297,column 1,is_stmt,isa 0
+           LDW     .D2T2   *++SP(8),B3       ; |297| 
 	.dwcfi	cfa_offset, 16
 	.dwcfi	restore_reg, 19
            LDW     .D2T2   *++SP(8),B10
 	.dwcfi	cfa_offset, 8
 	.dwcfi	restore_reg, 26
-           LDW     .D2T2   *++SP(8),B11      ; |292| 
+           LDW     .D2T2   *++SP(8),B11      ; |297| 
 	.dwcfi	cfa_offset, 0
 	.dwcfi	restore_reg, 27
 	.dwcfi	cfa_offset, 0
@@ -2159,7 +2174,7 @@ $C$DW$198	.dwtag  DW_TAG_TI_branch
            RETNOP  .S2     B3,5
            ; BRANCH OCCURS {B3}  
 	.dwattr $C$DW$165, DW_AT_TI_end_file("../main_gtz.c")
-	.dwattr $C$DW$165, DW_AT_TI_end_line(0x124)
+	.dwattr $C$DW$165, DW_AT_TI_end_line(0x129)
 	.dwattr $C$DW$165, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$165
@@ -2174,13 +2189,13 @@ $C$DW$199	.dwtag  DW_TAG_subprogram, DW_AT_name("clk_SWI_GTZ_0697_0777Hz")
 	.dwattr $C$DW$199, DW_AT_TI_symbol_name("clk_SWI_GTZ_0697_0777Hz")
 	.dwattr $C$DW$199, DW_AT_external
 	.dwattr $C$DW$199, DW_AT_TI_begin_file("../main_gtz.c")
-	.dwattr $C$DW$199, DW_AT_TI_begin_line(0x7e)
+	.dwattr $C$DW$199, DW_AT_TI_begin_line(0x7f)
 	.dwattr $C$DW$199, DW_AT_TI_begin_column(0x06)
 	.dwattr $C$DW$199, DW_AT_decl_file("../main_gtz.c")
-	.dwattr $C$DW$199, DW_AT_decl_line(0x7e)
+	.dwattr $C$DW$199, DW_AT_decl_line(0x7f)
 	.dwattr $C$DW$199, DW_AT_decl_column(0x06)
 	.dwattr $C$DW$199, DW_AT_TI_max_frame_size(0x18)
-	.dwpsn	file "../main_gtz.c",line 126,column 41,is_stmt,address clk_SWI_GTZ_0697_0777Hz,isa 0
+	.dwpsn	file "../main_gtz.c",line 127,column 41,is_stmt,address clk_SWI_GTZ_0697_0777Hz,isa 0
 
 	.dwfde $C$DW$CIE, clk_SWI_GTZ_0697_0777Hz
 $C$DW$200	.dwtag  DW_TAG_variable, DW_AT_name("start2")
@@ -2235,62 +2250,62 @@ $C$DW$206	.dwtag  DW_TAG_formal_parameter, DW_AT_name("arg0")
 ;******************************************************************************
 clk_SWI_GTZ_0697_0777Hz:
 ;** --------------------------------------------------------------------------*
-;** 132	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
-;** 134	-----------------------    C$11 = &coef[0];
-;** 134	-----------------------    v$1 = (int)C$11[1]<<16|(int)(unsigned)(unsigned short)*C$11;
-;** 134	-----------------------    coeffpair = v$1;
-;** 151	-----------------------    C$9 = delay_1;
-;** 151	-----------------------    prod1 = _dshr(_mpy2ll(C$9, v$1), 14u);
-;** 160	-----------------------    C$10 = sample;
-;** 160	-----------------------    delay = _add2(_sub2((int)(short)_hill(prod1)<<16|(int)(unsigned)(unsigned short)_loll(prod1), delay_2), (int)(short)C$10<<16|(int)(unsigned)(unsigned short)C$10);
-;** 165	-----------------------    delay_2 = C$9;
-;** 166	-----------------------    delay_1 = delay;
-;** 167	-----------------------    N = N+1;
-;** 169	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
-;** 171	-----------------------    tdiff2 = stop2-start2;
-;** 173	-----------------------    if ( N != 206 ) goto g3;
+;** 133	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
+;** 135	-----------------------    C$11 = &coef[0];
+;** 135	-----------------------    v$1 = (int)C$11[1]<<16|(int)(unsigned)(unsigned short)*C$11;
+;** 135	-----------------------    coeffpair = v$1;
+;** 152	-----------------------    C$9 = delay_1;
+;** 152	-----------------------    prod1 = _dshr(_mpy2ll(C$9, v$1), 14u);
+;** 161	-----------------------    C$10 = sample;
+;** 161	-----------------------    delay = _add2(_sub2((int)(short)_hill(prod1)<<16|(int)(unsigned)(unsigned short)_loll(prod1), delay_2), (int)(short)C$10<<16|(int)(unsigned)(unsigned short)C$10);
+;** 166	-----------------------    delay_2 = C$9;
+;** 167	-----------------------    delay_1 = delay;
+;** 168	-----------------------    N = N+1;
+;** 170	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
+;** 172	-----------------------    tdiff2 = stop2-start2;
+;** 174	-----------------------    if ( N != 206 ) goto g3;
 	.dwcfi	cfa_offset, 0
-           STW     .D2T2   B11,*SP--(8)      ; |126| 
+           STW     .D2T2   B11,*SP--(8)      ; |127| 
 	.dwcfi	cfa_offset, 8
 	.dwcfi	save_reg_to_mem, 27, 0
-           STW     .D2T2   B10,*SP--(8)      ; |126| 
+           STW     .D2T2   B10,*SP--(8)      ; |127| 
 	.dwcfi	cfa_offset, 16
 	.dwcfi	save_reg_to_mem, 26, -8
-           STW     .D2T2   B3,*SP--(8)       ; |126| 
+           STW     .D2T2   B3,*SP--(8)       ; |127| 
 	.dwcfi	cfa_offset, 24
 	.dwcfi	save_reg_to_mem, 19, 0
 $C$DW$207	.dwtag  DW_TAG_variable, DW_AT_name("$O$C1")
 	.dwattr $C$DW$207, DW_AT_TI_symbol_name("$O$C1")
 	.dwattr $C$DW$207, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$207, DW_AT_location[DW_OP_reg24]
+	.dwattr $C$DW$207, DW_AT_location[DW_OP_reg7]
 $C$DW$208	.dwtag  DW_TAG_variable, DW_AT_name("$O$C2")
 	.dwattr $C$DW$208, DW_AT_TI_symbol_name("$O$C2")
 	.dwattr $C$DW$208, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$208, DW_AT_location[DW_OP_reg5]
+	.dwattr $C$DW$208, DW_AT_location[DW_OP_reg8]
 $C$DW$209	.dwtag  DW_TAG_variable, DW_AT_name("$O$C3")
 	.dwattr $C$DW$209, DW_AT_TI_symbol_name("$O$C3")
 	.dwattr $C$DW$209, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$209, DW_AT_location[DW_OP_reg21]
+	.dwattr $C$DW$209, DW_AT_location[DW_OP_reg20]
 $C$DW$210	.dwtag  DW_TAG_variable, DW_AT_name("$O$C4")
 	.dwattr $C$DW$210, DW_AT_TI_symbol_name("$O$C4")
 	.dwattr $C$DW$210, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$210, DW_AT_location[DW_OP_reg23]
+	.dwattr $C$DW$210, DW_AT_location[DW_OP_reg6]
 $C$DW$211	.dwtag  DW_TAG_variable, DW_AT_name("$O$C5")
 	.dwattr $C$DW$211, DW_AT_TI_symbol_name("$O$C5")
 	.dwattr $C$DW$211, DW_AT_type(*$C$DW$T$11)
-	.dwattr $C$DW$211, DW_AT_location[DW_OP_reg4]
+	.dwattr $C$DW$211, DW_AT_location[DW_OP_reg3]
 $C$DW$212	.dwtag  DW_TAG_variable, DW_AT_name("$O$C6")
 	.dwattr $C$DW$212, DW_AT_TI_symbol_name("$O$C6")
 	.dwattr $C$DW$212, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$212, DW_AT_location[DW_OP_reg22]
+	.dwattr $C$DW$212, DW_AT_location[DW_OP_reg4]
 $C$DW$213	.dwtag  DW_TAG_variable, DW_AT_name("$O$C7")
 	.dwattr $C$DW$213, DW_AT_TI_symbol_name("$O$C7")
 	.dwattr $C$DW$213, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$213, DW_AT_location[DW_OP_reg25]
+	.dwattr $C$DW$213, DW_AT_location[DW_OP_reg22]
 $C$DW$214	.dwtag  DW_TAG_variable, DW_AT_name("$O$C8")
 	.dwattr $C$DW$214, DW_AT_TI_symbol_name("$O$C8")
 	.dwattr $C$DW$214, DW_AT_type(*$C$DW$T$10)
-	.dwattr $C$DW$214, DW_AT_location[DW_OP_reg22]
+	.dwattr $C$DW$214, DW_AT_location[DW_OP_reg21]
 $C$DW$215	.dwtag  DW_TAG_variable, DW_AT_name("$O$C9")
 	.dwattr $C$DW$215, DW_AT_TI_symbol_name("$O$C9")
 	.dwattr $C$DW$215, DW_AT_type(*$C$DW$T$10)
@@ -2326,7 +2341,7 @@ $C$DW$222	.dwtag  DW_TAG_variable, DW_AT_name("prod1")
 $C$DW$223	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$001")
 	.dwattr $C$DW$223, DW_AT_TI_symbol_name("$O$ILP$s32x2$001")
 	.dwattr $C$DW$223, DW_AT_type(*$C$DW$T$1124)
-	.dwattr $C$DW$223, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$223, DW_AT_location[DW_OP_reg6]
 $C$DW$224	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$002")
 	.dwattr $C$DW$224, DW_AT_TI_symbol_name("$O$ILP$s32x2$002")
 	.dwattr $C$DW$224, DW_AT_type(*$C$DW$T$1124)
@@ -2334,206 +2349,211 @@ $C$DW$224	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$002")
 $C$DW$225	.dwtag  DW_TAG_variable, DW_AT_name("$O$ILP$s32x2$003")
 	.dwattr $C$DW$225, DW_AT_TI_symbol_name("$O$ILP$s32x2$003")
 	.dwattr $C$DW$225, DW_AT_type(*$C$DW$T$1124)
-	.dwattr $C$DW$225, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$225, DW_AT_location[DW_OP_reg24]
 $C$DW$226	.dwtag  DW_TAG_variable, DW_AT_name("$O$CSE$s16x2$004")
 	.dwattr $C$DW$226, DW_AT_TI_symbol_name("$O$CSE$s16x2$004")
 	.dwattr $C$DW$226, DW_AT_type(*$C$DW$T$975)
-	.dwattr $C$DW$226, DW_AT_location[DW_OP_reg20]
+	.dwattr $C$DW$226, DW_AT_location[DW_OP_reg3]
 $C$DW$227	.dwtag  DW_TAG_variable, DW_AT_name("$O$CSE$s16x2$005")
 	.dwattr $C$DW$227, DW_AT_TI_symbol_name("$O$CSE$s16x2$005")
 	.dwattr $C$DW$227, DW_AT_type(*$C$DW$T$975)
 	.dwattr $C$DW$227, DW_AT_location[DW_OP_reg3]
-	.dwpsn	file "../main_gtz.c",line 132,column 2,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 133,column 2,is_stmt,isa 0
 $C$DW$228	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$228, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$228, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$228, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL27:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |132| 
+$C$RL27:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |133| 
 ;** --------------------------------------------------------------------------*
-           STW     .D2T1   A4,*+DP(start2$2) ; |132| 
-	.dwpsn	file "../main_gtz.c",line 134,column 2,is_stmt,isa 0
+           STW     .D2T1   A4,*+DP(start2$2) ; |133| 
+	.dwpsn	file "../main_gtz.c",line 135,column 2,is_stmt,isa 0
            MVKL    .S1     coef,A3
            MVKH    .S1     coef,A3
-           LDHU    .D1T1   *A3,A4            ; |134| 
-           LDH     .D1T1   *+A3(2),A3        ; |134| 
+           LDHU    .D1T1   *A3,A4            ; |135| 
+           LDH     .D1T1   *+A3(2),A3        ; |135| 
            NOP             4
-           PACK2   .L1     A3,A4,A3          ; |134| 
-           STW     .D2T1   A3,*+DP(coeffpair) ; |134| 
-	.dwpsn	file "../main_gtz.c",line 151,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_1$9),B5 ; |151| 
+           PACK2   .L1     A3,A4,A3          ; |135| 
+           STW     .D2T1   A3,*+DP(coeffpair) ; |135| 
+	.dwpsn	file "../main_gtz.c",line 152,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(delay_1$9),B5 ; |152| 
            NOP             4
-           MPY2    .M2X    B5,A3,B7:B6       ; |151| 
+           MPY2    .M2X    B5,A3,B7:B6       ; |152| 
            NOP             3
-           DSHR    .S2     B7:B6,14,B11:B10  ; |151| 
-	.dwpsn	file "../main_gtz.c",line 160,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(sample),B4   ; |160| 
-           LDW     .D2T2   *+DP(delay_2$10),B6 ; |160| 
-           PACK2   .L2     B11,B10,B7        ; |160| 
+           DSHR    .S2     B7:B6,14,B11:B10  ; |152| 
+	.dwpsn	file "../main_gtz.c",line 161,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(sample),B4   ; |161| 
+           LDW     .D2T2   *+DP(delay_2$10),B6 ; |161| 
+           PACK2   .L2     B11,B10,B7        ; |161| 
            NOP             3
 
-           PACK2   .L2     B4,B4,B4          ; |160| 
-||         SUB2    .S2     B7,B6,B6          ; |160| 
+           PACK2   .L2     B4,B4,B4          ; |161| 
+||         SUB2    .S2     B7,B6,B6          ; |161| 
 
-           ADD2    .L2     B6,B4,B4          ; |160| 
-	.dwpsn	file "../main_gtz.c",line 165,column 2,is_stmt,isa 0
-           STW     .D2T2   B5,*+DP(delay_2$10) ; |165| 
+           ADD2    .L2     B6,B4,B4          ; |161| 
 	.dwpsn	file "../main_gtz.c",line 166,column 2,is_stmt,isa 0
-           STW     .D2T2   B4,*+DP(delay_1$9) ; |166| 
+           STW     .D2T2   B5,*+DP(delay_2$10) ; |166| 
 	.dwpsn	file "../main_gtz.c",line 167,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$4),B4      ; |167| 
+           STW     .D2T2   B4,*+DP(delay_1$9) ; |167| 
+	.dwpsn	file "../main_gtz.c",line 168,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$4),B4      ; |168| 
            NOP             4
-           ADD     .L2     1,B4,B4           ; |167| 
-           STW     .D2T2   B4,*+DP(N$4)      ; |167| 
-	.dwpsn	file "../main_gtz.c",line 169,column 2,is_stmt,isa 0
+           ADD     .L2     1,B4,B4           ; |168| 
+           STW     .D2T2   B4,*+DP(N$4)      ; |168| 
+	.dwpsn	file "../main_gtz.c",line 170,column 2,is_stmt,isa 0
 $C$DW$229	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$229, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$229, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$229, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL28:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |169| 
+$C$RL28:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |170| 
 ;** --------------------------------------------------------------------------*
-	.dwpsn	file "../main_gtz.c",line 171,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start2$2),B4 ; |171| 
+	.dwpsn	file "../main_gtz.c",line 172,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start2$2),B4 ; |172| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |171| 
-           STW     .D2T2   B4,*+DP(tdiff2)   ; |171| 
-	.dwpsn	file "../main_gtz.c",line 173,column 2,is_stmt,isa 0
-           LDW     .D2T2   *+DP(N$4),B4      ; |173| 
-           MVK     .S2     206,B5            ; |173| 
+           SUB     .L2X    A4,B4,B4          ; |172| 
+           STW     .D2T2   B4,*+DP(tdiff2)   ; |172| 
+	.dwpsn	file "../main_gtz.c",line 174,column 2,is_stmt,isa 0
+           LDW     .D2T2   *+DP(N$4),B4      ; |174| 
+           MVK     .S2     206,B5            ; |174| 
            NOP             3
-           CMPEQ   .L2     B4,B5,B0          ; |173| 
-   [!B0]   BNOP    .S1     $C$L6,5           ; |173| 
-           ; BRANCHCC OCCURS {$C$L6}         ; |173| 
+           CMPEQ   .L2     B4,B5,B0          ; |174| 
+   [!B0]   BNOP    .S1     $C$L6,5           ; |174| 
+           ; BRANCHCC OCCURS {$C$L6}         ; |174| 
 ;** --------------------------------------------------------------------------*
-;** 174	-----------------------    prod1_0697_0777 = prod1;
-;** 177	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
-;** 179	-----------------------    C$8 = delay_1;
-;** 179	-----------------------    CSE$s16x2$004 = (short[2])C$8;
-;** 179	-----------------------    ILP$s32x2$001 = _mpy2ll(CSE$s16x2$004, CSE$s16x2$004);
-;** 179	-----------------------    prod1f1 = C$4 = _loll((unsigned long long)ILP$s32x2$001);
-;** 181	-----------------------    prod1f2 = C$1 = _hill((unsigned long long)ILP$s32x2$001);
-;** 183	-----------------------    C$7 = delay_2;
-;** 183	-----------------------    CSE$s16x2$005 = (short[2])C$7;
-;** 183	-----------------------    ILP$s32x2$002 = _mpy2ll(CSE$s16x2$005, CSE$s16x2$005);
-;** 183	-----------------------    prod2f1 = C$5 = _loll((unsigned long long)ILP$s32x2$002);
-;** 185	-----------------------    prod2f2 = C$2 = _hill((unsigned long long)ILP$s32x2$002);
-;** 187	-----------------------    ILP$s32x2$003 = _mpy2ll((short[2])C$8, (short[2])coeffpair);
-;** 191	-----------------------    prod3f1 = C$6 = _mpy((int)_loll((unsigned long long)ILP$s32x2$003), C$7);
-;** 193	-----------------------    prod3f2 = C$3 = _mpyhl(C$7, (int)_hill((unsigned long long)ILP$s32x2$003));
-;** 195	-----------------------    v$10 = (int)C$4+(int)C$5-C$6;
-;** 197	-----------------------    v$11 = (int)C$1+(int)C$2-C$3;
-;** 199	-----------------------    N = 0;
-;** 200	-----------------------    delay_2 = 0;
-;** 200	-----------------------    delay_1 = 0;
-;** 202	-----------------------    ((int (*)[2])gtz_out)[0] = __pack12(v$10, v$11);
-;** 203	-----------------------    Goertzel_Value1 = 0;
-;** 204	-----------------------    Goertzel_Value2 = 0;
-;** 207	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
-;** 209	-----------------------    tdiff_final2 = stop2-start2;
-;** 210	-----------------------    flag = 1;
-;** 211	-----------------------    N = 0;
+;** 175	-----------------------    prod1_0697_0777 = prod1;
+;** 178	-----------------------    start2 = xdc_runtime_Timestamp_get32__E();
+;** 180	-----------------------    C$8 = delay_1;
+;** 180	-----------------------    CSE$s16x2$004 = (short[2])C$8;
+;** 180	-----------------------    ILP$s32x2$001 = _mpy2ll(CSE$s16x2$004, CSE$s16x2$004);
+;** 180	-----------------------    prod1f1 = C$4 = _loll((unsigned long long)ILP$s32x2$001);
+;** 182	-----------------------    prod1f2 = C$1 = _hill((unsigned long long)ILP$s32x2$001);
+;** 184	-----------------------    C$7 = delay_2;
+;** 184	-----------------------    CSE$s16x2$005 = (short[2])C$7;
+;** 184	-----------------------    ILP$s32x2$002 = _mpy2ll(CSE$s16x2$005, CSE$s16x2$005);
+;** 184	-----------------------    prod2f1 = C$5 = _loll((unsigned long long)ILP$s32x2$002);
+;** 186	-----------------------    prod2f2 = C$2 = _hill((unsigned long long)ILP$s32x2$002);
+;** 188	-----------------------    ILP$s32x2$003 = _mpy2ll((short[2])C$8, (short[2])coeffpair);
+;** 194	-----------------------    prod3f1 = C$6 = _mpy((int)_dshr((long long)(int)_loll((unsigned long long)ILP$s32x2$003), 14u), C$7);
+;** 196	-----------------------    prod3f2 = C$3 = _mpyhl(C$7, (int)_dshr((long long)(int)_hill((unsigned long long)ILP$s32x2$003), 14u));
+;** 198	-----------------------    v$10 = (int)C$4+(int)C$5-C$6;
+;** 200	-----------------------    v$11 = (int)C$1+(int)C$2-C$3;
+;** 202	-----------------------    N = 0;
+;** 203	-----------------------    delay_2 = 0;
+;** 203	-----------------------    delay_1 = 0;
+;** 205	-----------------------    ((int (*)[2])gtz_out)[0] = __pack12(v$10, v$11);
+;** 206	-----------------------    Goertzel_Value1 = 0;
+;** 207	-----------------------    Goertzel_Value2 = 0;
+;** 210	-----------------------    stop2 = xdc_runtime_Timestamp_get32__E();
+;** 212	-----------------------    tdiff_final2 = stop2-start2;
+;** 213	-----------------------    flag = 1;
+;** 214	-----------------------    N = 0;
 ;**	-----------------------g3:
 ;**  	-----------------------    return;
-	.dwpsn	file "../main_gtz.c",line 174,column 3,is_stmt,isa 0
-           STW     .D2T2   B10,*+DP(prod1_0697_0777) ; |174| 
-           STW     .D2T2   B11,*+DP(prod1_0697_0777+4) ; |174| 
-	.dwpsn	file "../main_gtz.c",line 177,column 3,is_stmt,isa 0
+	.dwpsn	file "../main_gtz.c",line 175,column 3,is_stmt,isa 0
+           STW     .D2T2   B10,*+DP(prod1_0697_0777) ; |175| 
+           STW     .D2T2   B11,*+DP(prod1_0697_0777+4) ; |175| 
+	.dwpsn	file "../main_gtz.c",line 178,column 3,is_stmt,isa 0
 $C$DW$230	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$230, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$230, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$230, DW_AT_TI_call
-           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |177| 
-           ADDKPC  .S2     $C$RL29,B3,4      ; |177| 
-$C$RL29:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |177| 
+           CALL    .S1     xdc_runtime_Timestamp_get32__E ; |178| 
+           ADDKPC  .S2     $C$RL29,B3,4      ; |178| 
+$C$RL29:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |178| 
 ;** --------------------------------------------------------------------------*
-           STW     .D2T1   A4,*+DP(start2$2) ; |177| 
-	.dwpsn	file "../main_gtz.c",line 179,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_1$9),B6 ; |179| 
+           STW     .D2T1   A4,*+DP(start2$2) ; |178| 
+	.dwpsn	file "../main_gtz.c",line 180,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(delay_1$9),B5 ; |180| 
            NOP             4
-           MV      .L2     B6,B4             ; |179| 
-           MPY2    .M2     B4,B4,B5:B4       ; |179| 
+           MV      .L1X    B5,A3             ; |180| 
+           MPY2    .M1     A3,A3,A7:A6       ; |180| 
            NOP             3
-           MV      .L2     B4,B7             ; |179| 
-           STW     .D2T2   B7,*+DP(prod1f1)  ; |179| 
-	.dwpsn	file "../main_gtz.c",line 181,column 3,is_stmt,isa 0
-           MV      .L2     B5,B8             ; |181| 
-           STW     .D2T2   B8,*+DP(prod1f2)  ; |181| 
-	.dwpsn	file "../main_gtz.c",line 183,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(delay_2$10),B9 ; |183| 
+           STW     .D2T1   A6,*+DP(prod1f1)  ; |180| 
+	.dwpsn	file "../main_gtz.c",line 182,column 3,is_stmt,isa 0
+           STW     .D2T1   A7,*+DP(prod1f2)  ; |182| 
+	.dwpsn	file "../main_gtz.c",line 184,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(delay_2$10),B6 ; |184| 
            NOP             4
-           MV      .L1X    B9,A3             ; |183| 
-           MPY2    .M1     A3,A3,A5:A4       ; |183| 
+           MV      .L1X    B6,A3             ; |184| 
+           MPY2    .M1     A3,A3,A5:A4       ; |184| 
            NOP             3
-           STW     .D2T1   A4,*+DP(prod2f1)  ; |183| 
-	.dwpsn	file "../main_gtz.c",line 185,column 3,is_stmt,isa 0
-           STW     .D2T1   A5,*+DP(prod2f2)  ; |185| 
-	.dwpsn	file "../main_gtz.c",line 187,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(coeffpair),B4 ; |187| 
+           MV      .L1     A4,A3             ; |184| 
+           STW     .D2T1   A3,*+DP(prod2f1)  ; |184| 
+	.dwpsn	file "../main_gtz.c",line 186,column 3,is_stmt,isa 0
+           MV      .L1     A5,A8             ; |186| 
+           STW     .D2T1   A8,*+DP(prod2f2)  ; |186| 
+	.dwpsn	file "../main_gtz.c",line 188,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(coeffpair),B4 ; |188| 
            NOP             4
-           MPY2    .M2     B6,B4,B5:B4       ; |187| 
-           NOP             3
-	.dwpsn	file "../main_gtz.c",line 191,column 3,is_stmt,isa 0
-           MPY     .M2     B4,B9,B6          ; |191| 
+           MPY2    .M2     B5,B4,B9:B8       ; |188| 
+           NOP             4
+	.dwpsn	file "../main_gtz.c",line 194,column 3,is_stmt,isa 0
+           SHR     .S1X    B8,31,A5          ; |194| 
+           MV      .L1X    B8,A4             ; |194| 
+           DSHR    .S1     A5:A4,14,A5:A4    ; |194| 
+           MPY     .M1X    A4,B6,A4          ; |194| 
            NOP             1
-           STW     .D2T2   B6,*+DP(prod3f1)  ; |191| 
-	.dwpsn	file "../main_gtz.c",line 193,column 3,is_stmt,isa 0
-           MPYHL   .M2     B9,B5,B5          ; |193| 
+           STW     .D2T1   A4,*+DP(prod3f1)  ; |194| 
+	.dwpsn	file "../main_gtz.c",line 196,column 3,is_stmt,isa 0
+
+           SHR     .S2     B9,31,B5          ; |196| 
+||         MV      .L2     B9,B4             ; |196| 
+
+           DSHR    .S2     B5:B4,14,B5:B4    ; |196| 
+           MPYHL   .M2     B6,B4,B4          ; |196| 
            NOP             1
-           STW     .D2T2   B5,*+DP(prod3f2)  ; |193| 
-	.dwpsn	file "../main_gtz.c",line 195,column 3,is_stmt,isa 0
-           ADD     .L2X    A4,B7,B4          ; |195| 
-           SUB     .L2     B4,B6,B6          ; |195| 
-	.dwpsn	file "../main_gtz.c",line 197,column 3,is_stmt,isa 0
-           ADD     .L1X    A5,B8,A3          ; |197| 
-           NOP             1
-           SUB     .L2X    A3,B5,B7          ; |197| Define a twin register
-	.dwpsn	file "../main_gtz.c",line 199,column 3,is_stmt,isa 0
-           ZERO    .L2     B4                ; |199| 
-           STW     .D2T2   B4,*+DP(N$4)      ; |199| 
+           STW     .D2T2   B4,*+DP(prod3f2)  ; |196| 
+	.dwpsn	file "../main_gtz.c",line 198,column 3,is_stmt,isa 0
+           ADD     .L1     A3,A6,A3          ; |198| 
+           SUB     .L1     A3,A4,A4          ; |198| 
 	.dwpsn	file "../main_gtz.c",line 200,column 3,is_stmt,isa 0
-
-           MV      .L1X    B4,A3             ; |200| 
-||         STW     .D2T2   B4,*+DP(delay_1$9) ; |200| 
-
-           STW     .D2T1   A3,*+DP(delay_2$10) ; |200| 
+           ADD     .L1     A8,A7,A3          ; |200| 
+           SUB     .L1X    A3,B4,A5          ; |200| 
 	.dwpsn	file "../main_gtz.c",line 202,column 3,is_stmt,isa 0
-           MVKL    .S2     gtz_out,B4
-           MVKH    .S2     gtz_out,B4
-           STDW    .D2T2   B7:B6,*B4         ; |202| 
+           ZERO    .L2     B4                ; |202| 
+           STW     .D2T2   B4,*+DP(N$4)      ; |202| 
 	.dwpsn	file "../main_gtz.c",line 203,column 3,is_stmt,isa 0
-           STW     .D2T1   A3,*+DP(Goertzel_Value1$6) ; |203| 
-	.dwpsn	file "../main_gtz.c",line 204,column 3,is_stmt,isa 0
-           STW     .D2T1   A3,*+DP(Goertzel_Value2$5) ; |204| 
+           STW     .D2T2   B4,*+DP(delay_2$10) ; |203| 
+           STW     .D2T2   B4,*+DP(delay_1$9) ; |203| 
+	.dwpsn	file "../main_gtz.c",line 205,column 3,is_stmt,isa 0
+           MVKL    .S1     gtz_out,A3
+           MVKH    .S1     gtz_out,A3
+           STDW    .D1T1   A5:A4,*A3         ; |205| 
+	.dwpsn	file "../main_gtz.c",line 206,column 3,is_stmt,isa 0
+           MV      .L1X    B4,A3
+           STW     .D2T1   A3,*+DP(Goertzel_Value1$6) ; |206| 
 	.dwpsn	file "../main_gtz.c",line 207,column 3,is_stmt,isa 0
+           STW     .D2T1   A3,*+DP(Goertzel_Value2$5) ; |207| 
+	.dwpsn	file "../main_gtz.c",line 210,column 3,is_stmt,isa 0
 $C$DW$231	.dwtag  DW_TAG_TI_branch
 	.dwattr $C$DW$231, DW_AT_low_pc(0x00)
 	.dwattr $C$DW$231, DW_AT_name("xdc_runtime_Timestamp_get32__E")
 	.dwattr $C$DW$231, DW_AT_TI_call
            CALLP   .S2     xdc_runtime_Timestamp_get32__E,B3
-$C$RL30:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |207| 
+$C$RL30:   ; CALL OCCURS {xdc_runtime_Timestamp_get32__E} {0}  ; |210| 
 ;** --------------------------------------------------------------------------*
-	.dwpsn	file "../main_gtz.c",line 209,column 3,is_stmt,isa 0
-           LDW     .D2T2   *+DP(start2$2),B4 ; |209| 
+	.dwpsn	file "../main_gtz.c",line 212,column 3,is_stmt,isa 0
+           LDW     .D2T2   *+DP(start2$2),B4 ; |212| 
            NOP             4
-           SUB     .L2X    A4,B4,B4          ; |209| 
-           STW     .D2T2   B4,*+DP(tdiff_final2) ; |209| 
-	.dwpsn	file "../main_gtz.c",line 210,column 3,is_stmt,isa 0
-           MVK     .L1     1,A3              ; |210| 
-           STW     .D2T1   A3,*+DP(flag)     ; |210| 
-	.dwpsn	file "../main_gtz.c",line 211,column 3,is_stmt,isa 0
-           ZERO    .L2     B4                ; |211| 
-           STW     .D2T2   B4,*+DP(N$4)      ; |211| 
+           SUB     .L2X    A4,B4,B4          ; |212| 
+           STW     .D2T2   B4,*+DP(tdiff_final2) ; |212| 
+	.dwpsn	file "../main_gtz.c",line 213,column 3,is_stmt,isa 0
+           MVK     .L2     1,B4              ; |213| 
+           STW     .D2T2   B4,*+DP(flag)     ; |213| 
+	.dwpsn	file "../main_gtz.c",line 214,column 3,is_stmt,isa 0
+           ZERO    .L2     B4                ; |214| 
+           STW     .D2T2   B4,*+DP(N$4)      ; |214| 
 ;** --------------------------------------------------------------------------*
 $C$L6:    
-	.dwpsn	file "../main_gtz.c",line 214,column 1,is_stmt,isa 0
-           LDW     .D2T2   *++SP(8),B3       ; |214| 
+	.dwpsn	file "../main_gtz.c",line 217,column 1,is_stmt,isa 0
+           LDW     .D2T2   *++SP(8),B3       ; |217| 
 	.dwcfi	cfa_offset, 16
 	.dwcfi	restore_reg, 19
            LDW     .D2T2   *++SP(8),B10
 	.dwcfi	cfa_offset, 8
 	.dwcfi	restore_reg, 26
-           LDW     .D2T2   *++SP(8),B11      ; |214| 
+           LDW     .D2T2   *++SP(8),B11      ; |217| 
 	.dwcfi	cfa_offset, 0
 	.dwcfi	restore_reg, 27
 	.dwcfi	cfa_offset, 0
@@ -2544,7 +2564,7 @@ $C$DW$232	.dwtag  DW_TAG_TI_branch
            RETNOP  .S2     B3,5
            ; BRANCH OCCURS {B3}  
 	.dwattr $C$DW$199, DW_AT_TI_end_file("../main_gtz.c")
-	.dwattr $C$DW$199, DW_AT_TI_end_line(0xd6)
+	.dwattr $C$DW$199, DW_AT_TI_end_line(0xd9)
 	.dwattr $C$DW$199, DW_AT_TI_end_column(0x01)
 	.dwendentry
 	.dwendtag $C$DW$199

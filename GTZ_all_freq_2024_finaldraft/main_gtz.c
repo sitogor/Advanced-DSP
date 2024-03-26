@@ -40,7 +40,7 @@ void clk_SWI_GTZ_1633Hz(UArg arg0);
 */
 
 
-extern void task0_dtmfGen(void);
+
 extern void task1_dtmfDetect(void);
 extern int mag1, mag2, freq1, freq2;
 extern int sample, tdiff, tdiff_final, gtz_out[8],tdiff2, tdiff_final2;
@@ -110,6 +110,7 @@ void clk_SWI_Read_Data(UArg arg0) {
 	static int tick;
 	tick = Clock_getTicks();
 	sample = data[tick%NO_OF_SAMPLES];
+
 
 
 	//sample = (int) mag1*sin(2.0*PI*freq1*TICK_PERIOD*tick) + mag2*sin(2.0*PI*freq2*TICK_PERIOD*tick); // sampling for fixed point
@@ -187,6 +188,8 @@ void clk_SWI_GTZ_0697_0777Hz(UArg arg0) {
 		prod3f1 =  _mpy (delay_1, coeffpair);
 		//prod3_770 = (delay_1 * coef[1]);
 		prod3f2 =  _mpyh (delay_1, coeffpair);
+		prod3f1 = _dshr(prod3f1,14);
+		prod3f2 = _dshr(prod3f2,14);
 		//prod3_697 = ((short) prod3_697) * delay_2;
 		prod3f1 =  (short)prod3f1 * (short)(uint32_t)(delay_2 & 0xFFFF);
 		//prod3_770 = ((short) prod3_770) * delay_2;
@@ -269,6 +272,8 @@ void clk_SWI_GTZ_0852_941Hz(UArg arg0){
 		prod2f2 =  _mpyh (delay_2, delay_2);
 		prod3f1 =  _mpy (delay_1, coeffpair);
 		prod3f2 =  _mpyh (delay_1, coeffpair);
+		prod3f1 = _dshr(prod3f1,14);
+		prod3f2 = _dshr(prod3f2,14);
 		prod3f1 =  (short)prod3f1 * (short)(uint32_t)(delay_2 & 0xFFFF);
 		prod3f2 =  (short)prod3f2 * (short)(uint32_t)((delay_2 >> 16) & 0xFFFF);
 		Goertzel_Value1 = prod1f1 + prod2f1 - prod3f1;
@@ -347,6 +352,8 @@ void clk_SWI_GTZ_1209_1336Hz(UArg arg0){
 		prod2f2 =  _mpyh (delay_2, delay_2);
 		prod3f1 =  _mpy (delay_1, coeffpair);
 		prod3f2 =  _mpyh (delay_1, coeffpair);
+		prod3f1 = _dshr(prod3f1,14);
+		prod3f2 = _dshr(prod3f2,14);
 		prod3f1 =  (short)prod3f1 * (short)(uint32_t)(delay_2 & 0xFFFF);
 		prod3f2 =  (short)prod3f2 * (short)(uint32_t)((delay_2 >> 16) & 0xFFFF);
 		Goertzel_Value1 = prod1f1 + prod2f1 - prod3f1;
@@ -425,6 +432,8 @@ void clk_SWI_GTZ_1477_1633Hz(UArg arg0){
 		prod2f2 =  _mpyh (delay_2, delay_2);
 		prod3f1 =  _mpy (delay_1, coeffpair);
 		prod3f2 =  _mpyh (delay_1, coeffpair);
+		prod3f1 = _dshr(prod3f1,14);
+		prod3f2 = _dshr(prod3f2,14);
 		prod3f1 =  (short)prod3f1 * (short)(uint32_t)(delay_2 & 0xFFFF);
 		prod3f2 =  (short)prod3f2 * (short)(uint32_t)((delay_2 >> 16) & 0xFFFF);
 		Goertzel_Value1 = prod1f1 + prod2f1 - prod3f1;

@@ -37,7 +37,7 @@ int prod1660Hz, prod2660Hz,prod3660Hz;
 short coef[8] =
 		{ 0x6D02, 0x68AD, 0x63FC, 0x5EE7, 0x4A70, 0x4090, 0x3290, 0x23CE}; // goertzel coefficients
 void task1_dtmfDetect();
-void task2_dtmfGenerate(char* keys);
+
 extern short* buffer;
 int coeffpair;
 
@@ -100,8 +100,9 @@ void task1_dtmfDetect() {
 	for(n=0;n<8;n++) {
 		while (!flag) Task_sleep(210);
 
-		printf("\n number of clock cycles in 1 for loop iteration (optimized): %d  \n", tdiff2);
-		printf("\n including feedforward loop:%d  \n", tdiff_final2);
+		System_printf("\n number of clock cycles in 1 for loop iteration (optimized): %d  \n", tdiff2);
+		System_printf("\n including feedforward loop:%d  \n", tdiff_final2);
+		System_flush();
 
 		// set the initial maxima to the first elements
 		max_fixed0 = gtz_out[0];
@@ -127,11 +128,11 @@ void task1_dtmfDetect() {
 
 		result[n] = pad[max_fixed_index[0]][max_fixed_index[1]];
 
-		printf("The decoded value is: %c \n", result[n]);
+		System_printf("The decoded value is: %c \n", result[n]);
 		for (j = 0; j<8 ; j++){
 			printf("%d \n", gtz_out[j]);
 		}
-		printf("pad index pairs: (%d,%d) \n",max_fixed_index[0],max_fixed_index[1]);
+		System_printf("pad index pairs: (%d,%d) \n",max_fixed_index[0],max_fixed_index[1]);
 
 
 		/* TODO 3. Complete code to detect the 8 digits based on the GTZ output */
@@ -143,10 +144,11 @@ void task1_dtmfDetect() {
 	stop_2 = Timestamp_get32();
 	diff = stop_2 -  start_2;
 
-	printf("%d Total clock cycles elapsed: \n", diff);
+	System_printf("%d Total clock cycles elapsed: \n", diff);
 
-	printf("Detection finished\n");
+	System_printf("Detection finished\n");
 
 
-	printf("Finished\n");
+	System_printf("Finished\n");
+	System_flush();
 }
